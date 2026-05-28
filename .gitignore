@@ -1,0 +1,49 @@
+# macOS
+.DS_Store
+
+# Python cache/build
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Local logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Common local model/cache dirs (keep final adapter/checkpoint if needed)
+.cache/
+.huggingface/
+outputs/
+runs/
+wandb/
+
+# Keep course deliverables tracked
+!schemas/
+!logs/
+!adapter/
+!checkpoint/
