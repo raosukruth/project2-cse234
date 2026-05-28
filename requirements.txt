@@ -9,3 +9,5 @@ trl
 datasets
 json-repair
 sqlglot>=23.0
+scikit-learn
+joblib
