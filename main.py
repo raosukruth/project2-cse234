@@ -1,6 +1,8 @@
 import argparse
 import json
 import os
+import random
+import torch
 from json_repair import repair_json
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -11,6 +13,14 @@ except Exception:
 
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
 MAX_NEW_TOKENS = 512
+SEED = 42
+
+
+def set_deterministic_seed(seed: int = SEED):
+    random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
 
 
 def parse_model_json(response):
@@ -187,29 +197,32 @@ def load_model(model_name, adapter_dir='./adapter'):
     )
 
     model = PeftModel.from_pretrained(model, adapter_dir)
-    print("Loaded adapter from ./adapter")
+    model.eval()
+    print(f"Loaded adapter from {adapter_dir}")
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     return model, tokenizer
 
 
 def generate_response(model, tokenizer, prompt, max_new_tokens):
-    messages = [
-        {"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."},
-        {"role": "user", "content": prompt}
-    ]
-
-    text = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True
+    system_prompt = (
+        "You are a schema-linking assistant. "
+        "Given a question and a database schema, return ONLY a valid JSON object "
+        "that maps table names to relevant column-name lists."
+    )
+    text = (
+        f"<|im_start|>system\n{system_prompt}<|im_end|>\n"
+        f"<|im_start|>user\n{prompt}<|im_end|>\n"
+        f"<|im_start|>assistant\n"
     )
 
     model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 
     generated_ids = model.generate(
         **model_inputs,
-        max_new_tokens=max_new_tokens
+        max_new_tokens=max_new_tokens,
+        do_sample=False,
+        num_beams=1
     )
 
     generated_ids = [
@@ -235,25 +248,16 @@ def load_schema_as_dict(db_id, schemas_dir='./schemas'):
 def predict_schema_links(question, db_id, schemas_dir, model, tokenizer):
     schema = load_schema_as_dict(db_id, schemas_dir)
     prompt = (
-        "You are a schema-linking assistant.\n"
-        "Return ONLY a valid JSON object mapping table names to relevant column-name lists.\n"
-        "Output format example: {\"TableA\":[\"col1\",\"col2\"],\"TableB\":[]}\n"
-        "Do not return wrapper keys like TableName or Columns.\n\n"
-        f"Database schema:\n{schema}\n\n"
-        f"Question: {question}"
+        f"Database schema: {schema}\n\n"
+        f"Question: {question}\n\n"
+        "Return a JSON object with only the relevant tables as keys and lists of relevant column names as values. "
+        "You MUST include specific column names — do not return empty lists unless a table has no relevant columns. "
+        "Example: {\"Orders\": [\"order_id\", \"total\"], \"Customers\": [\"name\"]}"
     )
 
     response = generate_response(model, tokenizer, prompt, MAX_NEW_TOKENS)
-    print("\n--- RAW MODEL RESPONSE START ---")
-    print(response)
-    print("--- RAW MODEL RESPONSE END ---")
-
     links = parse_model_json(response)
-    print("PARSED TYPE:", type(links))
-    print("PARSED VALUE:", links)
-
-    return format_schema(links, schema )
-    # return links
+    return format_schema(links, schema)
 
 
 if __name__ == '__main__':
@@ -261,10 +265,13 @@ if __name__ == '__main__':
     ap.add_argument('--input',  required=True)
     ap.add_argument('--output', required=True)
     ap.add_argument('--schemas_dir', default='./schemas')
+    ap.add_argument('--adapter_dir', default='./adapter')
     args = ap.parse_args()
 
+    set_deterministic_seed(SEED)
+
     print("Loading model...")
-    model, tokenizer = load_model(MODEL_NAME)
+    model, tokenizer = load_model(MODEL_NAME, adapter_dir=args.adapter_dir)
     print("Model loaded successfully")
 
     with open(args.input) as f:
