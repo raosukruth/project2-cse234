@@ -24,7 +24,7 @@ declare -A FORMAT_MODE
 
 LABEL[1]="Q1_r4_attn_lr2e5_e2";  FORMAT_MODE[1]="basic"
 LABEL[2]="Q2_r4_attn_lr2e5_e3";  FORMAT_MODE[2]="basic"
-LABEL[3]="Q3_r8_attn_lr2e5_e3";  FORMAT_MODE[3]="basic"
+LABEL[3]="Q3_r4_attn_lr2e5_e4";  FORMAT_MODE[3]="basic"
 LABEL[4]="Q4_r4_attn_lr1e5_e4";  FORMAT_MODE[4]="basic"
 LABEL[5]="Q5_r4_attn_cosine_e3"; FORMAT_MODE[5]="basic"
 
