@@ -1,0 +1,18 @@
+Evaluated:                  101 questions
+Schema-invalid identifiers: tables=0, columns=0
+
+---- Table-level (macro-averaged across questions) ----
+  Precision_T : 0.2541
+  Recall_T    : 0.2294
+  F1_T        : 0.2296
+  Table Score : 0.2377     ((P+R+F1)/3)
+
+---- Column-level (Table.Column pairs, macro-averaged) ----
+  Precision_C : 0.0545
+  Recall_C    : 0.0385
+  F1_C        : 0.0425
+  Column Score: 0.0452     ((P+R+F1)/3)
+
+==> Leaderboard Score : 0.1414   (0.5*Table + 0.5*Column)
+
+Per-question metrics written to results/augmented_final_rf_two_stage/run7_per_question.csv

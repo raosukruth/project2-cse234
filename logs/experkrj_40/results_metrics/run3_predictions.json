@@ -1,0 +1,1421 @@
+[
+  {
+    "question_id": 1,
+    "schema_links": {}
+  },
+  {
+    "question_id": 2,
+    "schema_links": {
+      "EDRPOSTCRASH": [
+        "CASEWGT",
+        "PSUSTRAT"
+      ]
+    }
+  },
+  {
+    "question_id": 3,
+    "schema_links": {}
+  },
+  {
+    "question_id": 4,
+    "schema_links": {
+      "tblFieldDataTimeConstrainedSearches": [
+        "LocationID",
+        "EventID",
+        "SSMA_TimeStamp",
+        "Notch_Code",
+        "Recapture",
+        "Call_Index",
+        "Species_Code",
+        "Sex",
+        "Stage",
+        "Number",
+        "Habitat",
+        "SnakeID",
+        "Notes"
+      ],
+      "tblLocations": [
+        "LocationID",
+        "ParkCode",
+        "Project",
+        "SiteID",
+        "StartUTMX",
+        "StartUTMY",
+        "StopUTMX",
+        "StopUTMY",
+        "UtmZone",
+        "StartLat",
+        "StartLon",
+        "StopLat",
+        "StopLon",
+        "Elevation",
+        "EstHError",
+        "Aspect",
+        "Slope",
+        "Notes",
+        "Habitat"
+      ]
+    }
+  },
+  {
+    "question_id": 5,
+    "schema_links": {}
+  },
+  {
+    "question_id": 6,
+    "schema_links": {}
+  },
+  {
+    "question_id": 7,
+    "schema_links": {
+      "~TMPCLP650861": [],
+      "tbl_Event_Details": [
+        "Wind"
+      ],
+      "tbl_Stations": [
+        "In_protocol"
+      ],
+      "tbl_Stations_Updates": []
+    }
+  },
+  {
+    "question_id": 8,
+    "schema_links": {}
+  },
+  {
+    "question_id": 9,
+    "schema_links": {
+      "tbl_Events": [],
+      "tbl_Locations": []
+    }
+  },
+  {
+    "question_id": 10,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [
+        "ENTITY_NAME",
+        "ABSENT_RATE"
+      ],
+      "sysdiagrams": [
+        "name",
+        "principal_id",
+        "diagram_id",
+        "version",
+        "definition"
+      ]
+    }
+  },
+  {
+    "question_id": 11,
+    "schema_links": {
+      "INVERTEBRATES": [
+        "Family",
+        "Genus_species"
+      ]
+    }
+  },
+  {
+    "question_id": 12,
+    "schema_links": {}
+  },
+  {
+    "question_id": 13,
+    "schema_links": {}
+  },
+  {
+    "question_id": 14,
+    "schema_links": {}
+  },
+  {
+    "question_id": 15,
+    "schema_links": {
+      "tbl_Sites": [
+        "Site_Start_X",
+        "Site_Start_Y",
+        "Site_End_X",
+        "Site_End_Y",
+        "Length",
+        "Route",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 16,
+    "schema_links": {}
+  },
+  {
+    "question_id": 17,
+    "schema_links": {
+      "tblFieldDataAmphibianCallCounts": [
+        "Call_Index",
+        "Number_Observed",
+        "SSMA_TimeStamp",
+        "Species_Code"
+      ],
+      "tblFieldDataGreenCardObservations": [
+        "Number",
+        "Stage",
+        "SSMA_TimeStamp",
+        "Species_Code"
+      ],
+      "tblFieldDataMinnowTrapSurveys": [
+        "Count",
+        "SSMA_TimeStamp",
+        "Species_Code"
+      ],
+      "tblFieldDataSnakeDataCollection": [
+        "SVL",
+        "TLength",
+        "Weight",
+        "SSMA_TimeStamp",
+        "Species_Code"
+      ],
+      "tblFieldDataTimeConstrainedSearches": [
+        "Call_Index",
+        "SSMA_TimeStamp",
+        "Species_Code"
+      ],
+      "tblFieldDataTurtleMeasurements": [
+        "Carapace_Length",
+        "Carapace_Width",
+        "Plastron_Length",
+        "Plastron_Width",
+        "SSMA_TimeStamp",
+        "Species_Code"
+      ],
+      "tblFieldDataTurtleTrapSurveys": [
+        "Trap_#",
+        "SSMA_TimeStamp",
+        "Species_Code"
+      ],
+      "tblFieldDataWaterProperties": [
+        "Conductivity",
+        "pH",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 18,
+    "schema_links": {
+      "INJURY": [
+        "CASEID",
+        "CASENUMBER",
+        "INJNO",
+        "AISCODE",
+        "AIS",
+        "CASEWGT",
+        "INJLEVEL"
+      ]
+    }
+  },
+  {
+    "question_id": 19,
+    "schema_links": {}
+  },
+  {
+    "question_id": 20,
+    "schema_links": {
+      "tbl_Locations": [
+        "Location_ID",
+        "Coord_Units",
+        "Coord_System",
+        "Date_Monumented",
+        "Datum",
+        "Est_H_Error",
+        "GPSUnit",
+        "Loc_Notes"
+      ]
+    }
+  },
+  {
+    "question_id": 21,
+    "schema_links": {
+      "tbl_Stations": [
+        "Station_ID",
+        "Transect_ID",
+        "Station",
+        "Lat_final",
+        "Lat_Dir",
+        "Long_final",
+        "Long_Dir",
+        "Geo_Datum",
+        "In_protocol",
+        "Updated_date",
+        "Updated_by",
+        "Updated_notes",
+        "SSMA_TimeStamp"
+      ],
+      "tlu_Species": [
+        "Species_ID",
+        "Family",
+        "Scientific_Name",
+        "Common_Name",
+        "Species_Code",
+        "Source",
+        "Origin",
+        "Status",
+        "T&E_Status",
+        "Habitat",
+        "BNA_Account",
+        "TSN"
+      ]
+    }
+  },
+  {
+    "question_id": 22,
+    "schema_links": {}
+  },
+  {
+    "question_id": 23,
+    "schema_links": {
+      "Roadkill": []
+    }
+  },
+  {
+    "question_id": 24,
+    "schema_links": {}
+  },
+  {
+    "question_id": 25,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_EM_Core_and_Weighted_Performance": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_EM_ELP": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_EM_NYSESLAT_for_Participation": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_EM_Participation_Rate": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_HS_Chronic_Absenteeism": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_HS_Core_and_Weighted_Performance": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_HS_ELP": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_HS_Graduation_Rate": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "ACC_HS_Participation_Rate": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "Accountability_Levels": [
+        "ENTITY_CD",
+        "ENTITY_NAME"
+      ],
+      "Accountability_Status": []
+    }
+  },
+  {
+    "question_id": 26,
+    "schema_links": {
+      "EDRPOSTCRASH": [
+        "CASENO",
+        "CASENUMBER",
+        "VEHNO",
+        "EDREVENTNO"
+      ],
+      "EDRPRECRASH": [
+        "CASENO",
+        "CASENUMBER",
+        "VEHNO",
+        "EDRSUMMNO",
+        "EDREVENTNO",
+        "PCODE",
+        "PSU",
+        "CATEGORY"
+      ],
+      "INJURY": [
+        "CASEID",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "AIS",
+        "AISCODE",
+        "CASEWGT",
+        "INJLEVEL",
+        "OCCNO"
+      ],
+      "OCC": [
+        "CASEID",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "OCCNO",
+        "SEX",
+        "VEHNO",
+        "WORKDAYS"
+      ],
+      "OCCONTACT": [
+        "CASEID",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY"
+      ]
+    }
+  },
+  {
+    "question_id": 27,
+    "schema_links": {
+      "OSST": [],
+      "OISR": [
+        "Open_Date",
+        "Open_Time",
+        "Task_Id",
+        "Contact",
+        "Phone",
+        "TaskType",
+        "Dscription",
+        "Answer",
+        "Status"
+      ]
+    }
+  },
+  {
+    "question_id": 28,
+    "schema_links": {}
+  },
+  {
+    "question_id": 29,
+    "schema_links": {}
+  },
+  {
+    "question_id": 30,
+    "schema_links": {
+      "tblFieldDataTurtleMeasurements": [
+        "Sex",
+        "Carapace_Length",
+        "Carapace_Width",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 31,
+    "schema_links": {}
+  },
+  {
+    "question_id": 32,
+    "schema_links": {}
+  },
+  {
+    "question_id": 33,
+    "schema_links": {
+      "EDRPRECRASH": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "PCODE",
+        "PTIME",
+        "PVALUE",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "EDRREST": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "EDRSUMMNO",
+        "EDREVENTNO",
+        "LFBELT",
+        "LF1STAGEDEP",
+        "LF2STAGEDEP",
+        "LFSWITCH",
+        "LFDISPOSAL",
+        "LFSIDEDEPTIME",
+        "LFCURTDEPTIME",
+        "LFPRETENDEPTIME",
+        "LFRETRACTDEPTIME",
+        "LFBUCKDEPTIME",
+        "LFTRACKPOS",
+        "LFOCCSIZE",
+        "LFOCCPOS",
+        "RFBELT",
+        "RF1STAGEDEP",
+        "RF2STAGEDEP",
+        "RFSWITCH",
+        "RFDISPOSAL",
+        "RFSIDEDEPTIME",
+        "RFCURTDEPTIME",
+        "RFPRETENDEPTIME"
+      ]
+    }
+  },
+  {
+    "question_id": 34,
+    "schema_links": {
+      "EDRPOSTCRASH": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "EDRSUMMNO",
+        "EDREVENTNO",
+        "PCODE",
+        "PTIME",
+        "PVALUE",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ]
+    }
+  },
+  {
+    "question_id": 35,
+    "schema_links": {
+      "EDRREST": [],
+      "EDRPRECRASH": [],
+      "LOCALIZER": [],
+      "VEHSPEC": []
+    }
+  },
+  {
+    "question_id": 36,
+    "schema_links": {
+      "tbl_Locations": [
+        "Trail"
+      ],
+      "sysdiagrams": []
+    }
+  },
+  {
+    "question_id": 37,
+    "schema_links": {}
+  },
+  {
+    "question_id": 38,
+    "schema_links": {
+      "AHE6": [
+        "empID",
+        "LogInstanc",
+        "EncryptIV"
+      ],
+      "AHE7": [
+        "empID",
+        "line",
+        "ConName",
+        "AN",
+        "AG",
+        "BankName",
+        "BankCode",
+        "BankAcct",
+        "LogInstanc",
+        "ANCurrency",
+        "AGCurrency",
+        "Sequence",
+        "EncryptIV"
+      ],
+      "AHEM": [
+        "empID",
+        "sex",
+        "jobTitle",
+        "type",
+        "dept",
+        "branch",
+        "workStreet",
+        "workBlock",
+        "workZip",
+        "workCity",
+        "workCounty",
+        "workState",
+        "manager",
+        "userId",
+        "officeTel",
+        "mobile",
+        "pager",
+        "homeTel",
+        "fax",
+        "email",
+        "startDate",
+        "status",
+        "salary",
+        "salaryUnit",
+        "emplCost",
+        "empCostUnt",
+        "termDate",
+        "termReason",
+        "bankCode",
+        "bankBranch",
+        "bankBranNo"
+      ]
+    }
+  },
+  {
+    "question_id": 39,
+    "schema_links": {}
+  },
+  {
+    "question_id": 40,
+    "schema_links": {
+      "sysdiagrams": [
+        "name",
+        "principal_id",
+        "diagram_id",
+        "version",
+        "definition"
+      ]
+    }
+  },
+  {
+    "question_id": 41,
+    "schema_links": {
+      "TPW1": [],
+      "OCHH": [
+        "BankCode",
+        "BankAcct",
+        "CardCode",
+        "CardName",
+        "DPPStatus"
+      ]
+    }
+  },
+  {
+    "question_id": 42,
+    "schema_links": {
+      "OPRC": [
+        "Balance",
+        "Locked",
+        "DataSource",
+        "UserSign",
+        "DimCode",
+        "CCTypeCode",
+        "ValidFrom",
+        "ValidTo",
+        "Active",
+        "LogInstanc",
+        "UserSign2",
+        "UpdateDate",
+        "CCOwner"
+      ],
+      "OPR1": [
+        "UserSign"
+      ],
+      "AOC1": [
+        "OcrTotal",
+        "Direct",
+        "UserSign",
+        "ValidFrom",
+        "ValidTo",
+        "logInstanc",
+        "UserSign2",
+        "updateDate"
+      ],
+      "AOCR": [
+        "OcrTotal",
+        "Direct",
+        "Locked",
+        "DataSource",
+        "UserSign",
+        "DimCode",
+        "AbsEntry",
+        "Active",
+        "logInstanc",
+        "UserSign2",
+        "updateDate"
+      ]
+    }
+  },
+  {
+    "question_id": 43,
+    "schema_links": {
+      "tblFieldDataTurtleMeasurements": [
+        "Species_Code",
+        "Sex",
+        "Carapace_Length",
+        "Carapace_Width",
+        "Plastron_Length",
+        "Plastron_Width",
+        "Age",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 44,
+    "schema_links": {
+      "EDRPOSTCRASH": [
+        "CASENO",
+        "CASENUMBER",
+        "VEHNO",
+        "EDREVENTNO",
+        "CASEWGT",
+        "PSUSTRAT"
+      ],
+      "OCC": [
+        "CASEID",
+        "CASENO",
+        "CATEGORY",
+        "VEHNO",
+        "OCCNO",
+        "SEX",
+        "WEIGHT",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "INJURY": [
+        "CASEID",
+        "CATEGORY",
+        "INJNO",
+        "INJLEVEL",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ]
+    }
+  },
+  {
+    "question_id": 45,
+    "schema_links": {}
+  },
+  {
+    "question_id": 46,
+    "schema_links": {}
+  },
+  {
+    "question_id": 47,
+    "schema_links": {
+      "Annual_EM_SCIENCE": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "ASSESSMENT_NAME",
+        "SUBGROUP_NAME",
+        "TOTAL_COUNT",
+        "NOT_TESTED",
+        "PCT_NOT_TESTED",
+        "NUM_TESTED",
+        "PCT_TESTED",
+        "LEVEL1_COUNT",
+        "LEVEL1_%TESTED",
+        "LEVEL2_COUNT",
+        "LEVEL2_%TESTED",
+        "LEVEL3_COUNT",
+        "LEVEL3_%TESTED",
+        "LEVEL4_COUNT",
+        "LEVEL4_%TESTED",
+        "NUM_PROF",
+        "PER_PROF",
+        "TOTAL_SCALE_SCORES",
+        "MEAN_SCORE",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 48,
+    "schema_links": {
+      "tblFieldDataTurtleMeasurements": [
+        "Species_Code",
+        "Sex",
+        "Carapace_Length",
+        "Carapace_Width",
+        "Weight"
+      ]
+    }
+  },
+  {
+    "question_id": 49,
+    "schema_links": {
+      "OFLT": [],
+      "OQAG": []
+    }
+  },
+  {
+    "question_id": 50,
+    "schema_links": {}
+  },
+  {
+    "question_id": 51,
+    "schema_links": {}
+  },
+  {
+    "question_id": 52,
+    "schema_links": {
+      "tbl_MacroHabitat": [
+        "MacroHab",
+        "Hydrology",
+        "Upload_Date"
+      ],
+      "tbl_Sites": [
+        "Unit_Code"
+      ]
+    }
+  },
+  {
+    "question_id": 53,
+    "schema_links": {
+      "tblFieldDataSnakeDataCollection": [
+        "Behavior",
+        "CaptureMethod",
+        "Sex",
+        "SVL",
+        "Weight",
+        "SnakeID",
+        "Species_Code",
+        "TLength",
+        "Notes",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 54,
+    "schema_links": {}
+  },
+  {
+    "question_id": 55,
+    "schema_links": {
+      "INJURY": [
+        "INJNO",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "INJLEVEL"
+      ]
+    }
+  },
+  {
+    "question_id": 56,
+    "schema_links": {}
+  },
+  {
+    "question_id": 57,
+    "schema_links": {}
+  },
+  {
+    "question_id": 58,
+    "schema_links": {
+      "tbl_Saplings": []
+    }
+  },
+  {
+    "question_id": 59,
+    "schema_links": {
+      "CRASH": [
+        "CASENO",
+        "CASENUMBER"
+      ]
+    }
+  },
+  {
+    "question_id": 60,
+    "schema_links": {
+      "tlu_Species": [
+        "Common_Name"
+      ]
+    }
+  },
+  {
+    "question_id": 61,
+    "schema_links": {
+      "tblFieldDataSnakeDataCollection": [
+        "SSMA_TimeStamp",
+        "Sex",
+        "SVL",
+        "Species_Code",
+        "Notes"
+      ]
+    }
+  },
+  {
+    "question_id": 62,
+    "schema_links": {}
+  },
+  {
+    "question_id": 63,
+    "schema_links": {
+      "tbl_Observations": [
+        "Observation_ID",
+        "Event_ID",
+        "Species_ID",
+        "Sort_Order"
+      ],
+      "sysdiagrams": []
+    }
+  },
+  {
+    "question_id": 64,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [
+        "YEAR",
+        "SUBJECT",
+        "SUBGROUP_NAME",
+        "CORE_INDEX",
+        "OVERRIDE_CORE"
+      ],
+      "ACC_EM_Chronic_Absenteeism": [
+        "YEAR",
+        "ENROLLMENT",
+        "ABSENT_COUNT",
+        "ABSENT_RATE",
+        "SUBGROUP_NAME",
+        "LEVEL",
+        "OVERRIDE"
+      ],
+      "ACC_HS_Core_and_Weighted_Performance": [
+        "YEAR",
+        "SUBJECT",
+        "SUBGROUP_NAME",
+        "CORE_INDEX"
+      ],
+      "ACC_HS_Chronic_Absenteeism": [
+        "YEAR",
+        "ENROLLMENT",
+        "ABSENT_COUNT",
+        "ABSENT_RATE",
+        "SUBGROUP_NAME",
+        "LEVEL",
+        "OVERRIDE"
+      ],
+      "Accountability_Levels": [
+        "YEAR",
+        "OVERRIDE"
+      ],
+      "Accountability_Status": [
+        "YEAR",
+        "OVERALL_STATUS",
+        "MADE_PROGRESS",
+        "OVERRIDE",
+        "MADE_PROGRESS_FLAG"
+      ],
+      "Accountability_Status_by_Subgroup": [
+        "YEAR",
+        "SCHOOL_TYPE",
+        "OVERALL_STATUS",
+        "MADE_PROGRESS",
+        "OVERRIDE",
+        "MADE_PROGRESS_FLAG"
+      ],
+      "Annual_EM_ELA": [
+        "ASSESSMENT_NAME"
+      ]
+    }
+  },
+  {
+    "question_id": 65,
+    "schema_links": {}
+  },
+  {
+    "question_id": 66,
+    "schema_links": {
+      "tblFieldDataCoverBoard": [
+        "LocationID",
+        "EventID",
+        "Species_Code",
+        "Comments",
+        "SSMA_TimeStamp"
+      ],
+      "tblFieldDataGreenCardObservations": [
+        "RecordID",
+        "LocationID",
+        "EventID",
+        "Species_Code",
+        "Number",
+        "Evidence_Code",
+        "Stage",
+        "Comments",
+        "SSMA_TimeStamp"
+      ],
+      "tblFieldDataMinnowTrapSurveys": [
+        "RecordID",
+        "LocationID",
+        "EventID",
+        "Species_Code",
+        "Count",
+        "Stage",
+        "Comments",
+        "SSMA_TimeStamp"
+      ],
+      "tblFieldDataSnakeDataCollection": [
+        "RecordID",
+        "LocationID",
+        "EventID",
+        "SnakeID",
+        "CaptureMethod",
+        "Behavior",
+        "Species_Code",
+        "Sex",
+        "SVL",
+        "TLength",
+        "Weight",
+        "Gravid",
+        "Notes",
+        "SSMA_TimeStamp"
+      ],
+      "tblFieldDataTimeConstrainedSearches": [
+        "RecordID",
+        "LocationID",
+        "EventID",
+        "Species_Code",
+        "Sex",
+        "Stage",
+        "Number",
+        "Habitat",
+        "Notch_Code",
+        "SnakeID",
+        "Recapture",
+        "Call_Index",
+        "Notes",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 67,
+    "schema_links": {}
+  },
+  {
+    "question_id": 68,
+    "schema_links": {}
+  },
+  {
+    "question_id": 69,
+    "schema_links": {}
+  },
+  {
+    "question_id": 70,
+    "schema_links": {}
+  },
+  {
+    "question_id": 71,
+    "schema_links": {
+      "tbl_Events": [
+        "Event_ID",
+        "Location_ID",
+        "Event_Date",
+        "Crew_Members",
+        "Event_Notes",
+        "Updated_Date",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 72,
+    "schema_links": {
+      "INTEGRITY": [
+        "CASEWGT",
+        "PSUSTRAT"
+      ],
+      "OCC": [
+        "AGE",
+        "HEIGHT",
+        "VEHNO",
+        "CASEWGT",
+        "PSUSTRAT"
+      ]
+    }
+  },
+  {
+    "question_id": 73,
+    "schema_links": {
+      "tbl_MicroHabitat": [
+        "LightIndex",
+        "Evergreen",
+        "Deciduous",
+        "Shrub",
+        "Herb",
+        "WoodyDebris",
+        "Litter",
+        "BareGround",
+        "Rock",
+        "CoverPercent",
+        "Notes"
+      ],
+      "tbl_Event_Details": [],
+      "tbl_Sites": [
+        "Site_Name",
+        "Unit_Code",
+        "SSMA_TimeStamp"
+      ]
+    }
+  },
+  {
+    "question_id": 74,
+    "schema_links": {}
+  },
+  {
+    "question_id": 75,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [
+        "YEAR",
+        "ENROLLMENT",
+        "ABSENT_COUNT",
+        "ABSENT_RATE",
+        "LEVEL",
+        "OVERRIDE",
+        "DATA_REP_FLAG",
+        "PARTIAL_DATA_FLAG"
+      ],
+      "ACC_HS_Chronic_Absenteeism": [
+        "YEAR",
+        "ENROLLMENT",
+        "ABSENT_COUNT",
+        "ABSENT_RATE",
+        "LEVEL",
+        "OVERRIDE",
+        "DATA_REP_FLAG",
+        "PARTIAL_DATA_FLAG"
+      ],
+      "Accountability_Levels": [
+        "YEAR",
+        "OVERRIDE"
+      ],
+      "Accountability_Status": [
+        "YEAR",
+        "OVERALL_STATUS",
+        "MADE_PROGRESS",
+        "OVERRIDE",
+        "MADE_PROGRESS_FLAG"
+      ],
+      "Accountability_Status_by_Subgroup": [
+        "YEAR",
+        "OVERALL_STATUS",
+        "MADE_PROGRESS",
+        "OVERRIDE",
+        "MADE_PROGRESS_FLAG"
+      ],
+      "Annual_EM_ELA": [
+        "ENTITY_NAME",
+        "YEAR",
+        "NOT_TESTED",
+        "PCT_NOT_TESTED",
+        "NUM_TESTED",
+        "PCT_TESTED",
+        "LEVEL1_COUNT",
+        "LEVEL1_%TESTED",
+        "LEVEL2_COUNT",
+        "LEVEL2_%TESTED",
+        "LEVEL3_COUNT",
+        "LEVEL3_%TESTED"
+      ]
+    }
+  },
+  {
+    "question_id": 76,
+    "schema_links": {
+      "tbl_Locations": [
+        "QuadName"
+      ]
+    }
+  },
+  {
+    "question_id": 77,
+    "schema_links": {
+      "tbl_Locations": []
+    }
+  },
+  {
+    "question_id": 78,
+    "schema_links": {
+      "INTRUSION": [
+        "INTRUSION",
+        "INTCOMP",
+        "INTDIRECT",
+        "VEHNO"
+      ]
+    }
+  },
+  {
+    "question_id": 79,
+    "schema_links": {}
+  },
+  {
+    "question_id": 80,
+    "schema_links": {
+      "tbl_Locations": [
+        "Location_ID",
+        "Random_Selected"
+      ],
+      "tbl_Sites": [
+        "Site_ID",
+        "Unit_Code",
+        "Site_Notes"
+      ]
+    }
+  },
+  {
+    "question_id": 81,
+    "schema_links": {}
+  },
+  {
+    "question_id": 82,
+    "schema_links": {
+      "AHE1": [],
+      "AHE2": [],
+      "AHE3": [],
+      "AHE4": [],
+      "AHE6": []
+    }
+  },
+  {
+    "question_id": 83,
+    "schema_links": {
+      "INTRUSION": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "INTRUNO",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "LOCALIZER": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "OCCNO",
+        "LOCALNO",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "EJECT": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "OCCNO",
+        "EJECTNO",
+        "EJECTTYPE",
+        "EJECTAREA",
+        "EJECTMED"
+      ]
+    }
+  },
+  {
+    "question_id": 84,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [
+        "YEAR",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "SUBJECT",
+        "SUBGROUP_NAME",
+        "ABSENT_RATE"
+      ],
+      "ACC_HS_Chronic_Absenteeism": [
+        "YEAR",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "SUBJECT",
+        "SUBGROUP_NAME",
+        "ABSENT_RATE"
+      ]
+    }
+  },
+  {
+    "question_id": 85,
+    "schema_links": {}
+  },
+  {
+    "question_id": 86,
+    "schema_links": {}
+  },
+  {
+    "question_id": 87,
+    "schema_links": {}
+  },
+  {
+    "question_id": 88,
+    "schema_links": {
+      "tbl_Deadwood": [
+        "Decay",
+        "SSMA_TimeStamp"
+      ],
+      "tbl_Events": [],
+      "tbl_Locations": [],
+      "tbl_Nests": [],
+      "tbl_Overstory": [],
+      "tbl_Saplings": [],
+      "tbl_Seedlings": [],
+      "tbl_Tree_Tags": []
+    }
+  },
+  {
+    "question_id": 89,
+    "schema_links": {}
+  },
+  {
+    "question_id": 90,
+    "schema_links": {
+      "tbl_Locations": [
+        "Location_ID",
+        "Site_ID"
+      ],
+      "tbl_Sites": [
+        "Site_ID",
+        "Site_Name"
+      ]
+    }
+  },
+  {
+    "question_id": 91,
+    "schema_links": {
+      "VERTEBRATES": []
+    }
+  },
+  {
+    "question_id": 92,
+    "schema_links": {
+      "tlu_DecayStage": [
+        "DecayStage_ID",
+        "DecayStage_Descr"
+      ]
+    }
+  },
+  {
+    "question_id": 93,
+    "schema_links": {
+      "VEHMEAS": []
+    }
+  },
+  {
+    "question_id": 94,
+    "schema_links": {}
+  },
+  {
+    "question_id": 95,
+    "schema_links": {
+      "TPW1": []
+    }
+  },
+  {
+    "question_id": 96,
+    "schema_links": {
+      "Breeding_Codes": [
+        "Breed",
+        "Definition"
+      ],
+      "INVERTEBRATES": [
+        "Common_Name",
+        "Genus_species",
+        "Class",
+        "Family",
+        "Order",
+        "Number",
+        "UTMN",
+        "UTME",
+        "Datum",
+        "Location",
+        "Habitat",
+        "OBS_TYPE",
+        "Date",
+        "Time",
+        "Observer",
+        "Ownership",
+        "Notes",
+        "Survey",
+        "SSMA_TimeStamp"
+      ],
+      "VERTEBRATES": []
+    }
+  },
+  {
+    "question_id": 97,
+    "schema_links": {
+      "~TMPCLP650861": [],
+      "tbl_Density": [
+        "Half_meter"
+      ],
+      "tbl_Events": [
+        "Event_ID"
+      ]
+    }
+  },
+  {
+    "question_id": 98,
+    "schema_links": {}
+  },
+  {
+    "question_id": 99,
+    "schema_links": {
+      "OPRC": []
+    }
+  },
+  {
+    "question_id": 100,
+    "schema_links": {
+      "~TMPCLP650861": [],
+      "tbl_Stations": []
+    }
+  },
+  {
+    "question_id": 101,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [
+        "YEAR",
+        "ABSENT_RATE"
+      ],
+      "ACC_HS_Chronic_Absenteeism": [
+        "YEAR",
+        "ABSENT_RATE"
+      ],
+      "Annual_NYSAA": [
+        "YEAR",
+        "LEVEL1_PER"
+      ],
+      "Annual_NYSESLAT": [
+        "YEAR"
+      ],
+      "Annual_Regents_Exams": [
+        "YEAR",
+        "PER_LEVEL1"
+      ],
+      "Accountability_Levels": [
+        "YEAR",
+        "LEVEL"
+      ],
+      "Accountability_Status": [
+        "YEAR",
+        "OVERALL_STATUS"
+      ],
+      "Accountability_Status_by_Subgroup": [
+        "YEAR",
+        "OVERALL_STATUS"
+      ]
+    }
+  }
+]
