@@ -4547,5 +4547,2115 @@
         "R2"
       ]
     }
+  },
+  {
+    "question_id": 302,
+    "db_id": "SBODemoUS-Banking",
+    "question": "List all canceled outgoing payments with their document numbers and dates.",
+    "gold_sql": "SELECT DocNum, DocDate FROM OVPM WHERE Canceled = 'Y'",
+    "schema_links": {
+      "OVPM": [
+        "Canceled",
+        "DocDate",
+        "DocNum"
+      ]
+    }
+  },
+  {
+    "question_id": 303,
+    "db_id": "SBODemoUS-Banking",
+    "question": "What are the check numbers and bank names for all outgoing checks?",
+    "gold_sql": "SELECT CheckNum, BankName, CheckDate FROM OCHO",
+    "schema_links": {
+      "OCHO": [
+        "BankName",
+        "CheckDate",
+        "CheckNum"
+      ]
+    }
+  },
+  {
+    "question_id": 304,
+    "db_id": "SBODemoUS-Banking",
+    "question": "Show all checks with their check numbers and card codes.",
+    "gold_sql": "SELECT CheckNum, CardCode, Details FROM OCHH",
+    "schema_links": {
+      "OCHH": [
+        "CardCode",
+        "CheckNum",
+        "Details"
+      ]
+    }
+  },
+  {
+    "question_id": 305,
+    "db_id": "SBODemoUS-Banking",
+    "question": "How many deposits are there by deposit type?",
+    "gold_sql": "SELECT DeposType, COUNT(*) FROM ODPS GROUP BY DeposType",
+    "schema_links": {
+      "ODPS": [
+        "DeposType"
+      ]
+    }
+  },
+  {
+    "question_id": 306,
+    "db_id": "SBODemoUS-Banking",
+    "question": "List all bank accounts with their branches and GL accounts.",
+    "gold_sql": "SELECT BankCode, Account, Branch, GLAccount FROM DSC1",
+    "schema_links": {
+      "DSC1": [
+        "Account",
+        "BankCode",
+        "Branch",
+        "GLAccount"
+      ]
+    }
+  },
+  {
+    "question_id": 307,
+    "db_id": "SBODemoUS-Banking",
+    "question": "What payment methods are available and what type is each?",
+    "gold_sql": "SELECT PayMethCod, Descript, Type FROM OPYM",
+    "schema_links": {
+      "OPYM": [
+        "Descript",
+        "PayMethCod",
+        "Type"
+      ]
+    }
+  },
+  {
+    "question_id": 308,
+    "db_id": "SBODemoUS-Banking",
+    "question": "Show all bank names and their default accounts.",
+    "gold_sql": "SELECT BankCode, BankName, DfltAcct FROM ODSC",
+    "schema_links": {
+      "ODSC": [
+        "BankCode",
+        "BankName",
+        "DfltAcct"
+      ]
+    }
+  },
+  {
+    "question_id": 309,
+    "db_id": "SBODemoUS-Banking",
+    "question": "List all check details for outgoing payments including bank and account number.",
+    "gold_sql": "SELECT DocNum, CheckNum, BankCode, Branch, AcctNum FROM VPM1",
+    "schema_links": {
+      "VPM1": [
+        "AcctNum",
+        "BankCode",
+        "Branch",
+        "CheckNum",
+        "DocNum"
+      ]
+    }
+  },
+  {
+    "question_id": 310,
+    "db_id": "SBODemoUS-Banking",
+    "question": "How many reconciliations are there by reconciliation type?",
+    "gold_sql": "SELECT ReconType, COUNT(*) FROM OITR GROUP BY ReconType",
+    "schema_links": {
+      "OITR": [
+        "ReconType"
+      ]
+    }
+  },
+  {
+    "question_id": 311,
+    "db_id": "SBODemoUS-Banking",
+    "question": "Show all incoming payment check details with their due dates.",
+    "gold_sql": "SELECT DocNum, CheckNum, DueDate, BankCode, AcctNum FROM RCT1",
+    "schema_links": {
+      "RCT1": [
+        "AcctNum",
+        "BankCode",
+        "CheckNum",
+        "DocNum",
+        "DueDate"
+      ]
+    }
+  },
+  {
+    "question_id": 312,
+    "db_id": "SBODemoUS-Banking",
+    "question": "List all credit card numbers and amounts used in payment documents.",
+    "gold_sql": "SELECT DocNum, CrCardNum, CreditSum FROM PDF3",
+    "schema_links": {
+      "PDF3": [
+        "CrCardNum",
+        "CreditSum",
+        "DocNum"
+      ]
+    }
+  },
+  {
+    "question_id": 313,
+    "db_id": "SBODemoUS-Banking",
+    "question": "What payment runs exist and which vendors do they cover?",
+    "gold_sql": "SELECT AbsEntry, PayRunDate, VendorNum, PaymMethod FROM OPEX",
+    "schema_links": {
+      "OPEX": [
+        "AbsEntry",
+        "PayRunDate",
+        "PaymMethod",
+        "VendorNum"
+      ]
+    }
+  },
+  {
+    "question_id": 314,
+    "db_id": "SBODemoUS-Banking",
+    "question": "How many checks are in each deposit?",
+    "gold_sql": "SELECT DepositId, COUNT(*) FROM DPS1 GROUP BY DepositId",
+    "schema_links": {
+      "DPS1": [
+        "DepositId"
+      ]
+    }
+  },
+  {
+    "question_id": 315,
+    "db_id": "SBODemoUS-Banking",
+    "question": "Show all payment terms groups with their credit limits.",
+    "gold_sql": "SELECT GroupNum, PymntGroup, CredLimit FROM OCTG",
+    "schema_links": {
+      "OCTG": [
+        "CredLimit",
+        "GroupNum",
+        "PymntGroup"
+      ]
+    }
+  },
+  {
+    "question_id": 316,
+    "db_id": "SBODemoUS-Banking",
+    "question": "Show all payment wizard runs with their payment dates.",
+    "gold_sql": "SELECT IdNumber, PmntDate, NextDate FROM OPWZ",
+    "schema_links": {
+      "OPWZ": [
+        "IdNumber",
+        "NextDate",
+        "PmntDate"
+      ]
+    }
+  },
+  {
+    "question_id": 317,
+    "db_id": "SBODemoUS-Banking",
+    "question": "List all user branch codes and names.",
+    "gold_sql": "SELECT Code, Name FROM OUBR",
+    "schema_links": {
+      "OUBR": [
+        "Code",
+        "Name"
+      ]
+    }
+  },
+  {
+    "question_id": 318,
+    "db_id": "SBODemoUS-Banking",
+    "question": "What payment discount codes exist and what are their tolerance days?",
+    "gold_sql": "SELECT Code, Name, TolerDays FROM OPYD",
+    "schema_links": {
+      "OPYD": [
+        "Code",
+        "Name",
+        "TolerDays"
+      ]
+    }
+  },
+  {
+    "question_id": 319,
+    "db_id": "SBODemoUS-Banking",
+    "question": "Show reconciliation lines with their transaction IDs and reconciliation amounts.",
+    "gold_sql": "SELECT ReconNum, LineSeq, TransId, ReconSum FROM ITR1",
+    "schema_links": {
+      "ITR1": [
+        "LineSeq",
+        "ReconNum",
+        "ReconSum",
+        "TransId"
+      ]
+    }
+  },
+  {
+    "question_id": 320,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all contact persons with their names and positions.",
+    "gold_sql": "SELECT CntctCode, CardCode, Name, Position FROM OCPR",
+    "schema_links": {
+      "OCPR": [
+        "CardCode",
+        "CntctCode",
+        "Name",
+        "Position"
+      ]
+    }
+  },
+  {
+    "question_id": 321,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "How many activities exist per business partner?",
+    "gold_sql": "SELECT CardCode, COUNT(*) FROM OCLG GROUP BY CardCode",
+    "schema_links": {
+      "OCLG": [
+        "CardCode"
+      ]
+    }
+  },
+  {
+    "question_id": 322,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all sales territories and their descriptions.",
+    "gold_sql": "SELECT territryID, descript FROM OTER",
+    "schema_links": {
+      "OTER": [
+        "descript",
+        "territryID"
+      ]
+    }
+  },
+  {
+    "question_id": 323,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "Show all company branches with their names and VAT registration numbers.",
+    "gold_sql": "SELECT BPLId, BPLName, VATRegNum FROM OBPL",
+    "schema_links": {
+      "OBPL": [
+        "BPLId",
+        "BPLName",
+        "VATRegNum"
+      ]
+    }
+  },
+  {
+    "question_id": 324,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all business partner activities with their start and end dates.",
+    "gold_sql": "SELECT AbsID, BpCode, BpName, StartDate, EndDate FROM OOAT",
+    "schema_links": {
+      "OOAT": [
+        "AbsID",
+        "BpCode",
+        "BpName",
+        "EndDate",
+        "StartDate"
+      ]
+    }
+  },
+  {
+    "question_id": 325,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "What lead statuses are available in the system?",
+    "gold_sql": "SELECT statusID, name FROM OCLA",
+    "schema_links": {
+      "OCLA": [
+        "name",
+        "statusID"
+      ]
+    }
+  },
+  {
+    "question_id": 326,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all business partner priority codes and descriptions.",
+    "gold_sql": "SELECT PrioCode, PrioDesc FROM OBPP",
+    "schema_links": {
+      "OBPP": [
+        "PrioCode",
+        "PrioDesc"
+      ]
+    }
+  },
+  {
+    "question_id": 327,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all customer lead source codes and their names.",
+    "gold_sql": "SELECT Code, Name, Type FROM OCLS",
+    "schema_links": {
+      "OCLS": [
+        "Code",
+        "Name",
+        "Type"
+      ]
+    }
+  },
+  {
+    "question_id": 328,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "What vendor types are defined in the system?",
+    "gold_sql": "SELECT ABSEntry, VendorType, Descript FROM OVTP",
+    "schema_links": {
+      "OVTP": [
+        "ABSEntry",
+        "Descript",
+        "VendorType"
+      ]
+    }
+  },
+  {
+    "question_id": 329,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all business partner addresses with their city and country.",
+    "gold_sql": "SELECT CardCode, Street, City, Country FROM CRD1",
+    "schema_links": {
+      "CRD1": [
+        "CardCode",
+        "City",
+        "Country",
+        "Street"
+      ]
+    }
+  },
+  {
+    "question_id": 330,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "Show dunning records with their trace codes and effective date ranges.",
+    "gold_sql": "SELECT CardCode, TrcCode, TrcName, DateFrom, DateTo FROM ODDT",
+    "schema_links": {
+      "ODDT": [
+        "CardCode",
+        "DateFrom",
+        "DateTo",
+        "TrcCode",
+        "TrcName"
+      ]
+    }
+  },
+  {
+    "question_id": 331,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all customer query groups and their names.",
+    "gold_sql": "SELECT GroupCode, GroupName FROM OCQG",
+    "schema_links": {
+      "OCQG": [
+        "GroupCode",
+        "GroupName"
+      ]
+    }
+  },
+  {
+    "question_id": 332,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all activity closing reasons.",
+    "gold_sql": "SELECT Code, Name FROM OCLO",
+    "schema_links": {
+      "OCLO": [
+        "Code",
+        "Name"
+      ]
+    }
+  },
+  {
+    "question_id": 333,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "Show all business partner relationships and their relationship types.",
+    "gold_sql": "SELECT PrtId, Name, RelatnType FROM OPRT",
+    "schema_links": {
+      "OPRT": [
+        "Name",
+        "PrtId",
+        "RelatnType"
+      ]
+    }
+  },
+  {
+    "question_id": 334,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all email groups defined in the system.",
+    "gold_sql": "SELECT EmlGrpCode, EmlGrpName FROM OEGP",
+    "schema_links": {
+      "OEGP": [
+        "EmlGrpCode",
+        "EmlGrpName"
+      ]
+    }
+  },
+  {
+    "question_id": 335,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "Show all bank accounts per business partner with bank code and account number.",
+    "gold_sql": "SELECT CardCode, BankCode, Country, Account, Branch FROM ACRB",
+    "schema_links": {
+      "ACRB": [
+        "Account",
+        "BankCode",
+        "Branch",
+        "CardCode",
+        "Country"
+      ]
+    }
+  },
+  {
+    "question_id": 336,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "What customer lead types are defined?",
+    "gold_sql": "SELECT Code, Name FROM OCLT",
+    "schema_links": {
+      "OCLT": [
+        "Code",
+        "Name"
+      ]
+    }
+  },
+  {
+    "question_id": 337,
+    "db_id": "SBODemoUS-Business Partners",
+    "question": "List all sales employee names and their commission rates.",
+    "gold_sql": "SELECT SlpCode, SlpName, Commission FROM OSLP",
+    "schema_links": {
+      "OSLP": [
+        "Commission",
+        "SlpCode",
+        "SlpName"
+      ]
+    }
+  },
+  {
+    "question_id": 338,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show all journal entries with their reference dates and memos.",
+    "gold_sql": "SELECT TransId, RefDate, Memo, Ref1 FROM OJDT",
+    "schema_links": {
+      "OJDT": [
+        "Memo",
+        "Ref1",
+        "RefDate",
+        "TransId"
+      ]
+    }
+  },
+  {
+    "question_id": 339,
+    "db_id": "SBODemoUS-Finance",
+    "question": "What is the exchange rate for each currency?",
+    "gold_sql": "SELECT RateDate, Currency, Rate FROM ORTT",
+    "schema_links": {
+      "ORTT": [
+        "Currency",
+        "Rate",
+        "RateDate"
+      ]
+    }
+  },
+  {
+    "question_id": 340,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show account budgets with their debit and credit totals.",
+    "gold_sql": "SELECT AcctCode, DebLTotal, CredLTotal FROM OBGT",
+    "schema_links": {
+      "OBGT": [
+        "AcctCode",
+        "CredLTotal",
+        "DebLTotal"
+      ]
+    }
+  },
+  {
+    "question_id": 341,
+    "db_id": "SBODemoUS-Finance",
+    "question": "List all financial posting periods with their reference date ranges.",
+    "gold_sql": "SELECT AbsEntry, Code, Name, F_RefDate, T_RefDate FROM OFPR",
+    "schema_links": {
+      "OFPR": [
+        "AbsEntry",
+        "Code",
+        "F_RefDate",
+        "Name",
+        "T_RefDate"
+      ]
+    }
+  },
+  {
+    "question_id": 342,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show recurring transaction lines with their account codes and debit amounts.",
+    "gold_sql": "SELECT RcurCode, LineId, AcctCode, Debit, Credit FROM RCR1",
+    "schema_links": {
+      "RCR1": [
+        "AcctCode",
+        "Credit",
+        "Debit",
+        "LineId",
+        "RcurCode"
+      ]
+    }
+  },
+  {
+    "question_id": 343,
+    "db_id": "SBODemoUS-Finance",
+    "question": "List all period categories with their financial year and period names.",
+    "gold_sql": "SELECT AbsEntry, PeriodCat, FinancYear, PeriodName FROM OGAR",
+    "schema_links": {
+      "OGAR": [
+        "AbsEntry",
+        "FinancYear",
+        "PeriodCat",
+        "PeriodName"
+      ]
+    }
+  },
+  {
+    "question_id": 344,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show all depreciation run documents with their status.",
+    "gold_sql": "SELECT DocEntry, DocNum, DprArea, Status FROM ODRN",
+    "schema_links": {
+      "ODRN": [
+        "DocEntry",
+        "DocNum",
+        "DprArea",
+        "Status"
+      ]
+    }
+  },
+  {
+    "question_id": 345,
+    "db_id": "SBODemoUS-Finance",
+    "question": "List all depreciation areas and their depreciation methods.",
+    "gold_sql": "SELECT Code, Descr, DirectDpr FROM ODPA",
+    "schema_links": {
+      "ODPA": [
+        "Code",
+        "Descr",
+        "DirectDpr"
+      ]
+    }
+  },
+  {
+    "question_id": 346,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show cash flow transactions with their debit and credit amounts.",
+    "gold_sql": "SELECT CFTId, Debit, Credit FROM OCFT",
+    "schema_links": {
+      "OCFT": [
+        "CFTId",
+        "Credit",
+        "Debit"
+      ]
+    }
+  },
+  {
+    "question_id": 347,
+    "db_id": "SBODemoUS-Finance",
+    "question": "List budget distributions with their total and monthly breakdown for the first three months.",
+    "gold_sql": "SELECT BgdCode, BgdName, BgdTotal, Month1, Month2, Month3 FROM OBGD",
+    "schema_links": {
+      "OBGD": [
+        "BgdCode",
+        "BgdName",
+        "BgdTotal",
+        "Month1",
+        "Month2",
+        "Month3"
+      ]
+    }
+  },
+  {
+    "question_id": 348,
+    "db_id": "SBODemoUS-Finance",
+    "question": "What depreciation methods are configured in the system?",
+    "gold_sql": "SELECT Code, Descr, DprMeth FROM ODTP",
+    "schema_links": {
+      "ODTP": [
+        "Code",
+        "Descr",
+        "DprMeth"
+      ]
+    }
+  },
+  {
+    "question_id": 349,
+    "db_id": "SBODemoUS-Finance",
+    "question": "List all journal entry types that are not locked.",
+    "gold_sql": "SELECT JEType, DocTypDesc FROM OJET WHERE Locked = 'N'",
+    "schema_links": {
+      "OJET": [
+        "DocTypDesc",
+        "JEType",
+        "Locked"
+      ]
+    }
+  },
+  {
+    "question_id": 350,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show the financial report template hierarchy with names and levels.",
+    "gold_sql": "SELECT CatId, TemplateId, Name, Levels FROM OFRC",
+    "schema_links": {
+      "OFRC": [
+        "CatId",
+        "Levels",
+        "Name",
+        "TemplateId"
+      ]
+    }
+  },
+  {
+    "question_id": 351,
+    "db_id": "SBODemoUS-Finance",
+    "question": "List all cash discount codes and their descriptions.",
+    "gold_sql": "SELECT Code, TableDesc FROM OCDC",
+    "schema_links": {
+      "OCDC": [
+        "Code",
+        "TableDesc"
+      ]
+    }
+  },
+  {
+    "question_id": 352,
+    "db_id": "SBODemoUS-Finance",
+    "question": "What fixed asset classes are defined in the system?",
+    "gold_sql": "SELECT Code, Name, AssetType FROM OACS",
+    "schema_links": {
+      "OACS": [
+        "AssetType",
+        "Code",
+        "Name"
+      ]
+    }
+  },
+  {
+    "question_id": 353,
+    "db_id": "SBODemoUS-Finance",
+    "question": "List all active financial dimensions.",
+    "gold_sql": "SELECT DimCode, DimName FROM ODIM WHERE DimActive = 'Y'",
+    "schema_links": {
+      "ODIM": [
+        "DimActive",
+        "DimCode",
+        "DimName"
+      ]
+    }
+  },
+  {
+    "question_id": 354,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show all budget scenarios with their financial year.",
+    "gold_sql": "SELECT AbsId, Name, FinancYear, IsMain FROM OBGS",
+    "schema_links": {
+      "OBGS": [
+        "AbsId",
+        "FinancYear",
+        "IsMain",
+        "Name"
+      ]
+    }
+  },
+  {
+    "question_id": 355,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show cash flow lines with their project codes, credits and debits.",
+    "gold_sql": "SELECT Code, Project, Credit, Debit FROM OCFL",
+    "schema_links": {
+      "OCFL": [
+        "Code",
+        "Credit",
+        "Debit",
+        "Project"
+      ]
+    }
+  },
+  {
+    "question_id": 356,
+    "db_id": "SBODemoUS-General",
+    "question": "List all project management records with their names and start dates.",
+    "gold_sql": "SELECT AbsEntry, NAME, START, FINISHED FROM OPMG",
+    "schema_links": {
+      "OPMG": [
+        "AbsEntry",
+        "FINISHED",
+        "NAME",
+        "START"
+      ]
+    }
+  },
+  {
+    "question_id": 357,
+    "db_id": "SBODemoUS-General",
+    "question": "List all resources with their names and types.",
+    "gold_sql": "SELECT ResCode, ResName, ResType FROM ORSC",
+    "schema_links": {
+      "ORSC": [
+        "ResCode",
+        "ResName",
+        "ResType"
+      ]
+    }
+  },
+  {
+    "question_id": 358,
+    "db_id": "SBODemoUS-General",
+    "question": "List all user groups with their names.",
+    "gold_sql": "SELECT GroupId, GroupName FROM OUGR",
+    "schema_links": {
+      "OUGR": [
+        "GroupId",
+        "GroupName"
+      ]
+    }
+  },
+  {
+    "question_id": 359,
+    "db_id": "SBODemoUS-General",
+    "question": "What cockpit templates are available and which ones are set as default?",
+    "gold_sql": "SELECT AbsEntry, Code, Name, IsDefault FROM OCPT",
+    "schema_links": {
+      "OCPT": [
+        "AbsEntry",
+        "Code",
+        "IsDefault",
+        "Name"
+      ]
+    }
+  },
+  {
+    "question_id": 360,
+    "db_id": "SBODemoUS-General",
+    "question": "List all project stages with their start and close dates.",
+    "gold_sql": "SELECT AbsEntry, LineID, StageID, START, CLOSE FROM PMG1",
+    "schema_links": {
+      "PMG1": [
+        "AbsEntry",
+        "CLOSE",
+        "LineID",
+        "START",
+        "StageID"
+      ]
+    }
+  },
+  {
+    "question_id": 361,
+    "db_id": "SBODemoUS-General",
+    "question": "Show all project issues with their priority and closed status.",
+    "gold_sql": "SELECT AbsEntry, LineID, PRIORITY, CLOSED FROM PMG2",
+    "schema_links": {
+      "PMG2": [
+        "AbsEntry",
+        "CLOSED",
+        "LineID",
+        "PRIORITY"
+      ]
+    }
+  },
+  {
+    "question_id": 362,
+    "db_id": "SBODemoUS-General",
+    "question": "List all project documents with their type and total amounts.",
+    "gold_sql": "SELECT AbsEntry, LineID, TYP, DOCNUM, Total FROM PMG4",
+    "schema_links": {
+      "PMG4": [
+        "AbsEntry",
+        "DOCNUM",
+        "LineID",
+        "TYP",
+        "Total"
+      ]
+    }
+  },
+  {
+    "question_id": 363,
+    "db_id": "SBODemoUS-General",
+    "question": "Show all KPI names and values for each KPI set.",
+    "gold_sql": "SELECT KpsCode, LineNum, KpiName, KpiValue1 FROM KPS1",
+    "schema_links": {
+      "KPS1": [
+        "KpiName",
+        "KpiValue1",
+        "KpsCode",
+        "LineNum"
+      ]
+    }
+  },
+  {
+    "question_id": 364,
+    "db_id": "SBODemoUS-General",
+    "question": "List all KPI sets with their types and creation dates.",
+    "gold_sql": "SELECT KpsCode, KpsName, KpsType, CreateDate FROM OKPS",
+    "schema_links": {
+      "OKPS": [
+        "CreateDate",
+        "KpsCode",
+        "KpsName",
+        "KpsType"
+      ]
+    }
+  },
+  {
+    "question_id": 365,
+    "db_id": "SBODemoUS-General",
+    "question": "List all cockpit pages with their names and owners.",
+    "gold_sql": "SELECT AbsEntry, Name, Owner FROM ONCP",
+    "schema_links": {
+      "ONCP": [
+        "AbsEntry",
+        "Name",
+        "Owner"
+      ]
+    }
+  },
+  {
+    "question_id": 366,
+    "db_id": "SBODemoUS-General",
+    "question": "List all entries in the company configuration dictionary.",
+    "gold_sql": "SELECT Namespace, _Key, _Value FROM CDIC",
+    "schema_links": {
+      "CDIC": [
+        "Namespace",
+        "_Key",
+        "_Value"
+      ]
+    }
+  },
+  {
+    "question_id": 367,
+    "db_id": "SBODemoUS-General",
+    "question": "What queries are linked to each dashboard?",
+    "gold_sql": "SELECT DsbEntry, QryCtgry, QryName FROM DAB1",
+    "schema_links": {
+      "DAB1": [
+        "DsbEntry",
+        "QryCtgry",
+        "QryName"
+      ]
+    }
+  },
+  {
+    "question_id": 368,
+    "db_id": "SBODemoUS-General",
+    "question": "List all dashboards with their names and status.",
+    "gold_sql": "SELECT AbsEntry, DashbdCode, DashbdName, Status FROM ODAB",
+    "schema_links": {
+      "ODAB": [
+        "AbsEntry",
+        "DashbdCode",
+        "DashbdName",
+        "Status"
+      ]
+    }
+  },
+  {
+    "question_id": 369,
+    "db_id": "SBODemoUS-General",
+    "question": "List all registered business objects with their table names.",
+    "gold_sql": "SELECT ObjectId, TableName, TitleField FROM OBOB",
+    "schema_links": {
+      "OBOB": [
+        "ObjectId",
+        "TableName",
+        "TitleField"
+      ]
+    }
+  },
+  {
+    "question_id": 370,
+    "db_id": "SBODemoUS-General",
+    "question": "Show resource capacity totals and factors by weekday.",
+    "gold_sql": "SELECT ResCode, WeekDay, CapFactor1, CapTotal FROM RSC6",
+    "schema_links": {
+      "RSC6": [
+        "CapFactor1",
+        "CapTotal",
+        "ResCode",
+        "WeekDay"
+      ]
+    }
+  },
+  {
+    "question_id": 371,
+    "db_id": "SBODemoUS-General",
+    "question": "List all system reports with their names.",
+    "gold_sql": "SELECT Code, SysRptName FROM OSRC",
+    "schema_links": {
+      "OSRC": [
+        "Code",
+        "SysRptName"
+      ]
+    }
+  },
+  {
+    "question_id": 372,
+    "db_id": "SBODemoUS-General",
+    "question": "List project activities that are chargeable.",
+    "gold_sql": "SELECT AbsEntry, LineID, ACTIVITYID, Chargeable FROM PMG6",
+    "schema_links": {
+      "PMG6": [
+        "ACTIVITYID",
+        "AbsEntry",
+        "Chargeable",
+        "LineID"
+      ]
+    }
+  },
+  {
+    "question_id": 373,
+    "db_id": "SBODemoUS-General",
+    "question": "List all project phases with their owners and start dates.",
+    "gold_sql": "SELECT AbsEntry, OWNER, NAME, START FROM OPHA",
+    "schema_links": {
+      "OPHA": [
+        "AbsEntry",
+        "NAME",
+        "OWNER",
+        "START"
+      ]
+    }
+  },
+  {
+    "question_id": 374,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "List all employee absences with their reasons and date ranges.",
+    "gold_sql": "SELECT empID, fromDate, toDate, reason FROM HEM1",
+    "schema_links": {
+      "HEM1": [
+        "empID",
+        "fromDate",
+        "reason",
+        "toDate"
+      ]
+    }
+  },
+  {
+    "question_id": 375,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "Show all employee education records with their institute, major and diploma.",
+    "gold_sql": "SELECT empID, fromDate, toDate, institute, major, diploma FROM HEM2",
+    "schema_links": {
+      "HEM2": [
+        "diploma",
+        "empID",
+        "fromDate",
+        "institute",
+        "major",
+        "toDate"
+      ]
+    }
+  },
+  {
+    "question_id": 376,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "List all employee performance reviews with their grades and reviewing managers.",
+    "gold_sql": "SELECT empID, date, grade, manager FROM HEM3",
+    "schema_links": {
+      "HEM3": [
+        "date",
+        "empID",
+        "grade",
+        "manager"
+      ]
+    }
+  },
+  {
+    "question_id": 377,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "Show all previous employment records with employer and position.",
+    "gold_sql": "SELECT empID, fromDate, toDate, employer, position FROM HEM4",
+    "schema_links": {
+      "HEM4": [
+        "empID",
+        "employer",
+        "fromDate",
+        "position",
+        "toDate"
+      ]
+    }
+  },
+  {
+    "question_id": 378,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "List employee relationships showing their manager and department.",
+    "gold_sql": "SELECT empID, Manager, Dept, Branch FROM HEM5",
+    "schema_links": {
+      "HEM5": [
+        "Branch",
+        "Dept",
+        "Manager",
+        "empID"
+      ]
+    }
+  },
+  {
+    "question_id": 379,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "What employee statuses are defined in the system?",
+    "gold_sql": "SELECT statusID, name FROM OHST",
+    "schema_links": {
+      "OHST": [
+        "name",
+        "statusID"
+      ]
+    }
+  },
+  {
+    "question_id": 380,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "List all employee termination reasons.",
+    "gold_sql": "SELECT reasonID, name FROM OHTR",
+    "schema_links": {
+      "OHTR": [
+        "name",
+        "reasonID"
+      ]
+    }
+  },
+  {
+    "question_id": 381,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "What types of education levels are defined in the system?",
+    "gold_sql": "SELECT edType, name FROM OHED",
+    "schema_links": {
+      "OHED": [
+        "edType",
+        "name"
+      ]
+    }
+  },
+  {
+    "question_id": 382,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "List all defined employee positions.",
+    "gold_sql": "SELECT posID, name FROM OHPS",
+    "schema_links": {
+      "OHPS": [
+        "name",
+        "posID"
+      ]
+    }
+  },
+  {
+    "question_id": 383,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "Show holiday window settings for each holiday code.",
+    "gold_sql": "SELECT HldCode, WndFrm, WndTo FROM OHLD",
+    "schema_links": {
+      "OHLD": [
+        "HldCode",
+        "WndFrm",
+        "WndTo"
+      ]
+    }
+  },
+  {
+    "question_id": 384,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "List all holiday date ranges with their remarks.",
+    "gold_sql": "SELECT HldCode, StrDate, EndDate, Rmrks FROM HLD1",
+    "schema_links": {
+      "HLD1": [
+        "EndDate",
+        "HldCode",
+        "Rmrks",
+        "StrDate"
+      ]
+    }
+  },
+  {
+    "question_id": 385,
+    "db_id": "SBODemoUS-Human Resources",
+    "question": "List all employee teams with their names.",
+    "gold_sql": "SELECT teamID, name FROM OHTM",
+    "schema_links": {
+      "OHTM": [
+        "name",
+        "teamID"
+      ]
+    }
+  },
+  {
+    "question_id": 386,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all warehouses with their names and codes.",
+    "gold_sql": "SELECT WhsCode, WhsName FROM OWHS",
+    "schema_links": {
+      "OWHS": [
+        "WhsCode",
+        "WhsName"
+      ]
+    }
+  },
+  {
+    "question_id": 387,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "Show all planned work orders with their item codes and planned quantities.",
+    "gold_sql": "SELECT DocEntry, DocNum, ItemCode, PlannedQty, CmpltQty FROM OWOR WHERE Status = 'P'",
+    "schema_links": {
+      "OWOR": [
+        "CmpltQty",
+        "DocEntry",
+        "DocNum",
+        "ItemCode",
+        "PlannedQty",
+        "Status"
+      ]
+    }
+  },
+  {
+    "question_id": 388,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all work order components with their planned and issued quantities.",
+    "gold_sql": "SELECT DocEntry, LineNum, ItemCode, PlannedQty, IssuedQty FROM WOR1",
+    "schema_links": {
+      "WOR1": [
+        "DocEntry",
+        "IssuedQty",
+        "ItemCode",
+        "LineNum",
+        "PlannedQty"
+      ]
+    }
+  },
+  {
+    "question_id": 389,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all item type groups.",
+    "gold_sql": "SELECT ItmsTypCod, ItmsGrpNam FROM OITG",
+    "schema_links": {
+      "OITG": [
+        "ItmsGrpNam",
+        "ItmsTypCod"
+      ]
+    }
+  },
+  {
+    "question_id": 390,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "Show all items with on-hand quantities greater than zero.",
+    "gold_sql": "SELECT ItemCode, WhsCode, OnHand FROM OITW WHERE OnHand > 0",
+    "schema_links": {
+      "OITW": [
+        "ItemCode",
+        "OnHand",
+        "WhsCode"
+      ]
+    }
+  },
+  {
+    "question_id": 391,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all batch numbers with their expiration dates.",
+    "gold_sql": "SELECT ItemCode, SysNumber, DistNumber, ExpDate FROM OBTN",
+    "schema_links": {
+      "OBTN": [
+        "DistNumber",
+        "ExpDate",
+        "ItemCode",
+        "SysNumber"
+      ]
+    }
+  },
+  {
+    "question_id": 392,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "Show all serial numbers with their manufacture dates.",
+    "gold_sql": "SELECT ItemCode, SysNumber, DistNumber, MnfDate FROM OSRN",
+    "schema_links": {
+      "OSRN": [
+        "DistNumber",
+        "ItemCode",
+        "MnfDate",
+        "SysNumber"
+      ]
+    }
+  },
+  {
+    "question_id": 393,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all price lists with their names.",
+    "gold_sql": "SELECT ListNum, ListName FROM OPLN",
+    "schema_links": {
+      "OPLN": [
+        "ListName",
+        "ListNum"
+      ]
+    }
+  },
+  {
+    "question_id": 394,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all units of measure that are not locked.",
+    "gold_sql": "SELECT UomEntry, UomCode, UomName FROM OUOM WHERE Locked = 'N'",
+    "schema_links": {
+      "OUOM": [
+        "Locked",
+        "UomCode",
+        "UomEntry",
+        "UomName"
+      ]
+    }
+  },
+  {
+    "question_id": 395,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all bin locations with their warehouse codes.",
+    "gold_sql": "SELECT AbsEntry, BinCode, WhsCode FROM OBIN",
+    "schema_links": {
+      "OBIN": [
+        "AbsEntry",
+        "BinCode",
+        "WhsCode"
+      ]
+    }
+  },
+  {
+    "question_id": 396,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "How many inventory transactions are recorded per item?",
+    "gold_sql": "SELECT ItemCode, COUNT(*) FROM OITL GROUP BY ItemCode",
+    "schema_links": {
+      "OITL": [
+        "ItemCode"
+      ]
+    }
+  },
+  {
+    "question_id": 397,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all manufacturer names.",
+    "gold_sql": "SELECT FirmCode, FirmName FROM OMRC",
+    "schema_links": {
+      "OMRC": [
+        "FirmCode",
+        "FirmName"
+      ]
+    }
+  },
+  {
+    "question_id": 398,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "Show inventory log messages with their transaction types and quantities.",
+    "gold_sql": "SELECT MessageID, TransType, Quantity FROM OILM",
+    "schema_links": {
+      "OILM": [
+        "MessageID",
+        "Quantity",
+        "TransType"
+      ]
+    }
+  },
+  {
+    "question_id": 399,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all inventory count cycles with their frequency.",
+    "gold_sql": "SELECT Code, Name, Frequency FROM OCYC",
+    "schema_links": {
+      "OCYC": [
+        "Code",
+        "Frequency",
+        "Name"
+      ]
+    }
+  },
+  {
+    "question_id": 400,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all custom group codes with their tax information.",
+    "gold_sql": "SELECT CstGrpCode, CstGrpName, BuyTax FROM OARG",
+    "schema_links": {
+      "OARG": [
+        "BuyTax",
+        "CstGrpCode",
+        "CstGrpName"
+      ]
+    }
+  },
+  {
+    "question_id": 401,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all length units of measurement.",
+    "gold_sql": "SELECT UnitCode, UnitDisply, UnitName FROM OLGT",
+    "schema_links": {
+      "OLGT": [
+        "UnitCode",
+        "UnitDisply",
+        "UnitName"
+      ]
+    }
+  },
+  {
+    "question_id": 402,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all weight units of measurement.",
+    "gold_sql": "SELECT UnitCode, UnitDisply, UnitName FROM OWGT",
+    "schema_links": {
+      "OWGT": [
+        "UnitCode",
+        "UnitDisply",
+        "UnitName"
+      ]
+    }
+  },
+  {
+    "question_id": 403,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "What package types are defined with their dimensions?",
+    "gold_sql": "SELECT PkgCode, PkgType, Length1, Width1 FROM OPKG",
+    "schema_links": {
+      "OPKG": [
+        "Length1",
+        "PkgCode",
+        "PkgType",
+        "Width1"
+      ]
+    }
+  },
+  {
+    "question_id": 404,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all user queries with their names and categories.",
+    "gold_sql": "SELECT IntrnalKey, QCategory, QName FROM OUQR",
+    "schema_links": {
+      "OUQR": [
+        "IntrnalKey",
+        "QCategory",
+        "QName"
+      ]
+    }
+  },
+  {
+    "question_id": 405,
+    "db_id": "SBODemoUS-Reports",
+    "question": "Show all saved filters with their query strings.",
+    "gold_sql": "SELECT FormNum, QueryStr FROM OFLT",
+    "schema_links": {
+      "OFLT": [
+        "FormNum",
+        "QueryStr"
+      ]
+    }
+  },
+  {
+    "question_id": 406,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all report types with their names.",
+    "gold_sql": "SELECT CODE, NAME FROM RTYP",
+    "schema_links": {
+      "RTYP": [
+        "CODE",
+        "NAME"
+      ]
+    }
+  },
+  {
+    "question_id": 407,
+    "db_id": "SBODemoUS-Reports",
+    "question": "How many string translations exist per language?",
+    "gold_sql": "SELECT Language, COUNT(*) FROM SCRT GROUP BY Language",
+    "schema_links": {
+      "SCRT": [
+        "Language"
+      ]
+    }
+  },
+  {
+    "question_id": 408,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all query categories with their names.",
+    "gold_sql": "SELECT CategoryId, CatName FROM OQCN",
+    "schema_links": {
+      "OQCN": [
+        "CatName",
+        "CategoryId"
+      ]
+    }
+  },
+  {
+    "question_id": 409,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all report nodes with their table names.",
+    "gold_sql": "SELECT ID, NodeStr, TableName FROM OCRT",
+    "schema_links": {
+      "OCRT": [
+        "ID",
+        "NodeStr",
+        "TableName"
+      ]
+    }
+  },
+  {
+    "question_id": 410,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all reports with their authors and dimensions.",
+    "gold_sql": "SELECT DocCode, DocName, Author, Width, Height FROM RDOC",
+    "schema_links": {
+      "RDOC": [
+        "Author",
+        "DocCode",
+        "DocName",
+        "Height",
+        "Width"
+      ]
+    }
+  },
+  {
+    "question_id": 411,
+    "db_id": "SBODemoUS-Reports",
+    "question": "Show all visible report items with their positions.",
+    "gold_sql": "SELECT DocCode, ItemId, Type, ItemLeft, ItemTop FROM RITM WHERE VISIBLE = 'Y'",
+    "schema_links": {
+      "RITM": [
+        "DocCode",
+        "ItemId",
+        "ItemLeft",
+        "ItemTop",
+        "Type",
+        "VISIBLE"
+      ]
+    }
+  },
+  {
+    "question_id": 412,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List electronic document mappings with their object types.",
+    "gold_sql": "SELECT AbsEntry, Code, LineNum, ObjType FROM ECM4",
+    "schema_links": {
+      "ECM4": [
+        "AbsEntry",
+        "Code",
+        "LineNum",
+        "ObjType"
+      ]
+    }
+  },
+  {
+    "question_id": 413,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all active electronic document models.",
+    "gold_sql": "SELECT Code, Descr FROM OECM WHERE IsActive = 'Y'",
+    "schema_links": {
+      "OECM": [
+        "Code",
+        "Descr"
+      ]
+    }
+  },
+  {
+    "question_id": 414,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all authorization groups with their codes.",
+    "gold_sql": "SELECT AUTHGRPID, AUTHGRPCD, AUTHGRPN FROM OQAG",
+    "schema_links": {
+      "OQAG": [
+        "AUTHGRPCD",
+        "AUTHGRPID",
+        "AUTHGRPN"
+      ]
+    }
+  },
+  {
+    "question_id": 415,
+    "db_id": "SBODemoUS-Reports",
+    "question": "Show sales order invoice wizard entries with their card codes.",
+    "gold_sql": "SELECT WizardId, SOINum, CardCode, CardName FROM SOI3",
+    "schema_links": {
+      "SOI3": [
+        "CardCode",
+        "CardName",
+        "SOINum",
+        "WizardId"
+      ]
+    }
+  },
+  {
+    "question_id": 416,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List sales documents processed in the invoice wizard with their dates.",
+    "gold_sql": "SELECT WizardId, SOINum, DocType, DocNum, DocDate FROM SOI4",
+    "schema_links": {
+      "SOI4": [
+        "DocDate",
+        "DocNum",
+        "DocType",
+        "SOINum",
+        "WizardId"
+      ]
+    }
+  },
+  {
+    "question_id": 417,
+    "db_id": "SBODemoUS-Reports",
+    "question": "Show scheduled report action parameters with their key and value strings.",
+    "gold_sql": "SELECT ActionCode, ParamCode, KeyString, ValString FROM SRA1",
+    "schema_links": {
+      "SRA1": [
+        "ActionCode",
+        "KeyString",
+        "ParamCode",
+        "ValString"
+      ]
+    }
+  },
+  {
+    "question_id": 418,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List scheduled report recipients and their send methods.",
+    "gold_sql": "SELECT ActionCode, RecipCode, Name, SendEmail FROM SRA3",
+    "schema_links": {
+      "SRA3": [
+        "ActionCode",
+        "Name",
+        "RecipCode",
+        "SendEmail"
+      ]
+    }
+  },
+  {
+    "question_id": 419,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all external report objects with their types and creation dates.",
+    "gold_sql": "SELECT RepObjId, Name, ObjType, CreateDate FROM XROBJ",
+    "schema_links": {
+      "XROBJ": [
+        "CreateDate",
+        "Name",
+        "ObjType",
+        "RepObjId"
+      ]
+    }
+  },
+  {
+    "question_id": 420,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List all report sequence definitions.",
+    "gold_sql": "SELECT SeqID, SeqName, LineNum, ObjectID FROM RPRS",
+    "schema_links": {
+      "RPRS": [
+        "LineNum",
+        "ObjectID",
+        "SeqID",
+        "SeqName"
+      ]
+    }
+  },
+  {
+    "question_id": 421,
+    "db_id": "SBODemoUS-Reports",
+    "question": "List transport records with their states.",
+    "gold_sql": "SELECT AbsEntry, State FROM TRB1",
+    "schema_links": {
+      "TRB1": [
+        "AbsEntry",
+        "State"
+      ]
+    }
+  },
+  {
+    "question_id": 422,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List all sales stages with their closing percentages.",
+    "gold_sql": "SELECT Num, Descript, StepId, CloPrcnt FROM OOST",
+    "schema_links": {
+      "OOST": [
+        "CloPrcnt",
+        "Descript",
+        "Num",
+        "StepId"
+      ]
+    }
+  },
+  {
+    "question_id": 423,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "Show opportunity partners with their relationship types.",
+    "gold_sql": "SELECT OpportId, Line, ParterId, OrlCode FROM OPR2",
+    "schema_links": {
+      "OPR2": [
+        "Line",
+        "OpportId",
+        "OrlCode",
+        "ParterId"
+      ]
+    }
+  },
+  {
+    "question_id": 424,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List all competitors mentioned in opportunities and whether they won.",
+    "gold_sql": "SELECT OpportId, Line, CompetId, Won FROM OPR3",
+    "schema_links": {
+      "OPR3": [
+        "CompetId",
+        "Line",
+        "OpportId",
+        "Won"
+      ]
+    }
+  },
+  {
+    "question_id": 425,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "How many opportunities exist per loss reason?",
+    "gold_sql": "SELECT ReasondId, COUNT(*) FROM OPR5 GROUP BY ReasondId",
+    "schema_links": {
+      "OPR5": [
+        "ReasondId"
+      ]
+    }
+  },
+  {
+    "question_id": 426,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List all competitors with their threat levels.",
+    "gold_sql": "SELECT CompetId, Name, ThreatLevl FROM OCMT",
+    "schema_links": {
+      "OCMT": [
+        "CompetId",
+        "Name",
+        "ThreatLevl"
+      ]
+    }
+  },
+  {
+    "question_id": 427,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List all profit centers with their names and balances.",
+    "gold_sql": "SELECT PrcCode, PrcName, Balance FROM OPRC",
+    "schema_links": {
+      "OPRC": [
+        "Balance",
+        "PrcCode",
+        "PrcName"
+      ]
+    }
+  },
+  {
+    "question_id": 428,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List all active cost centers.",
+    "gold_sql": "SELECT OcrCode, OcrName FROM OOCR WHERE Locked = 'N'",
+    "schema_links": {
+      "OOCR": [
+        "Locked",
+        "OcrCode",
+        "OcrName"
+      ]
+    }
+  },
+  {
+    "question_id": 429,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List all industry codes and names.",
+    "gold_sql": "SELECT IndCode, IndName FROM OOND",
+    "schema_links": {
+      "OOND": [
+        "IndCode",
+        "IndName"
+      ]
+    }
+  },
+  {
+    "question_id": 430,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "What relationship types are defined for opportunities?",
+    "gold_sql": "SELECT OrlCode, OrlDesc FROM OORL",
+    "schema_links": {
+      "OORL": [
+        "OrlCode",
+        "OrlDesc"
+      ]
+    }
+  },
+  {
+    "question_id": 431,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "How many opportunities are there per salesperson?",
+    "gold_sql": "SELECT SlpCode, COUNT(*) FROM OOPR GROUP BY SlpCode",
+    "schema_links": {
+      "OOPR": [
+        "SlpCode"
+      ]
+    }
+  },
+  {
+    "question_id": 432,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List opportunity stage activities with their open and close dates.",
+    "gold_sql": "SELECT OpprId, Line, SlpCode, OpenDate, CloseDate, ClosePrcnt FROM OPR1",
+    "schema_links": {
+      "OPR1": [
+        "CloseDate",
+        "ClosePrcnt",
+        "Line",
+        "OpenDate",
+        "OpprId",
+        "SlpCode"
+      ]
+    }
+  },
+  {
+    "question_id": 433,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List all active campaign activity codes.",
+    "gold_sql": "SELECT CemCode, CemDescr FROM ACEM WHERE Active = 'Y'",
+    "schema_links": {
+      "ACEM": [
+        "Active",
+        "CemCode",
+        "CemDescr"
+      ]
+    }
+  },
+  {
+    "question_id": 434,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List opportunity duration rules with their number of days and percentages.",
+    "gold_sql": "SELECT AbsEntry, NumOfDays, Percentage FROM ODOR",
+    "schema_links": {
+      "ODOR": [
+        "AbsEntry",
+        "NumOfDays",
+        "Percentage"
+      ]
+    }
+  },
+  {
+    "question_id": 435,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "How many archived opportunities are there per business partner?",
+    "gold_sql": "SELECT CardCode, COUNT(*) FROM AOPR GROUP BY CardCode",
+    "schema_links": {
+      "AOPR": [
+        "CardCode"
+      ]
+    }
+  },
+  {
+    "question_id": 436,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "Show cost center distributions with their profit center amounts.",
+    "gold_sql": "SELECT OcrCode, PrcCode, PrcAmount FROM OCR1",
+    "schema_links": {
+      "OCR1": [
+        "OcrCode",
+        "PrcAmount",
+        "PrcCode"
+      ]
+    }
+  },
+  {
+    "question_id": 437,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "Show archived cost centers and their totals.",
+    "gold_sql": "SELECT OcrCode, OcrName, OcrTotal FROM AOCR",
+    "schema_links": {
+      "AOCR": [
+        "OcrCode",
+        "OcrName",
+        "OcrTotal"
+      ]
+    }
+  },
+  {
+    "question_id": 438,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "Show archived profit centers with their balances.",
+    "gold_sql": "SELECT PrcCode, PrcName, Balance FROM APRC",
+    "schema_links": {
+      "APRC": [
+        "Balance",
+        "PrcCode",
+        "PrcName"
+      ]
+    }
+  },
+  {
+    "question_id": 439,
+    "db_id": "SBODemoUS-Sales Opportunities",
+    "question": "List all active campaign activities.",
+    "gold_sql": "SELECT CemCode, CemDescr FROM OCEM WHERE Active = 'Y'",
+    "schema_links": {
+      "OCEM": [
+        "Active",
+        "CemCode",
+        "CemDescr"
+      ]
+    }
+  },
+  {
+    "question_id": 440,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all items transferred to technicians for service calls.",
+    "gold_sql": "SELECT SrcvCallID, Line, ItemCode, ItemName FROM SCL2 WHERE TransToTec = 'Y'",
+    "schema_links": {
+      "SCL2": [
+        "ItemCode",
+        "ItemName",
+        "Line",
+        "SrcvCallID",
+        "TransToTec"
+      ]
+    }
+  },
+  {
+    "question_id": 441,
+    "db_id": "SBODemoUS-Service",
+    "question": "Show all billable labor entries for service calls.",
+    "gold_sql": "SELECT SrcvCallID, Line, ItemCode, Quantity FROM SCL3 WHERE Bill = 'Y'",
+    "schema_links": {
+      "SCL3": [
+        "Bill",
+        "ItemCode",
+        "Line",
+        "Quantity",
+        "SrcvCallID"
+      ]
+    }
+  },
+  {
+    "question_id": 442,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all service call activities with their creation dates.",
+    "gold_sql": "SELECT SrvcCallId, Line, ClgID, CreateDate FROM SCL5",
+    "schema_links": {
+      "SCL5": [
+        "ClgID",
+        "CreateDate",
+        "Line",
+        "SrvcCallId"
+      ]
+    }
+  },
+  {
+    "question_id": 443,
+    "db_id": "SBODemoUS-Service",
+    "question": "Show all technician assignments for service calls with start and end dates.",
+    "gold_sql": "SELECT SrcvCallID, Line, Technician, StartDate, EndDate FROM SCL6",
+    "schema_links": {
+      "SCL6": [
+        "EndDate",
+        "Line",
+        "SrcvCallID",
+        "StartDate",
+        "Technician"
+      ]
+    }
+  },
+  {
+    "question_id": 444,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all service groups and their descriptions.",
+    "gold_sql": "SELECT AbsEntry, ServiceGrp, Descrip FROM OSGP",
+    "schema_links": {
+      "OSGP": [
+        "AbsEntry",
+        "Descrip",
+        "ServiceGrp"
+      ]
+    }
+  },
+  {
+    "question_id": 445,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all active service call statuses.",
+    "gold_sql": "SELECT statusID, Name FROM OSCS WHERE Active = 'Y'",
+    "schema_links": {
+      "OSCS": [
+        "Active",
+        "Name",
+        "statusID"
+      ]
+    }
+  },
+  {
+    "question_id": 446,
+    "db_id": "SBODemoUS-Service",
+    "question": "What active service call types are defined?",
+    "gold_sql": "SELECT callTypeID, Name FROM OSCT WHERE Active = 'Y'",
+    "schema_links": {
+      "OSCT": [
+        "Active",
+        "Name",
+        "callTypeID"
+      ]
+    }
+  },
+  {
+    "question_id": 447,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all service call origins.",
+    "gold_sql": "SELECT originID, Name FROM OSCO",
+    "schema_links": {
+      "OSCO": [
+        "Name",
+        "originID"
+      ]
+    }
+  },
+  {
+    "question_id": 448,
+    "db_id": "SBODemoUS-Service",
+    "question": "Show all installed items with their customer and serial numbers.",
+    "gold_sql": "SELECT insID, customer, custmrName, manufSN, internalSN FROM OINS",
+    "schema_links": {
+      "OINS": [
+        "custmrName",
+        "customer",
+        "insID",
+        "internalSN",
+        "manufSN"
+      ]
+    }
+  },
+  {
+    "question_id": 449,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all active service contracts with their customers and owners.",
+    "gold_sql": "SELECT ContractID, CstmrCode, CstmrName, Owner FROM OCTR WHERE Status = 'A'",
+    "schema_links": {
+      "OCTR": [
+        "ContractID",
+        "CstmrCode",
+        "CstmrName",
+        "Owner",
+        "Status"
+      ]
+    }
+  },
+  {
+    "question_id": 450,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all service queues with their managers.",
+    "gold_sql": "SELECT queueID, descript, manager FROM OQUE",
+    "schema_links": {
+      "OQUE": [
+        "descript",
+        "manager",
+        "queueID"
+      ]
+    }
+  },
+  {
+    "question_id": 451,
+    "db_id": "SBODemoUS-Service",
+    "question": "How many service calls are there per customer?",
+    "gold_sql": "SELECT customer, COUNT(*) FROM OSCL GROUP BY customer",
+    "schema_links": {
+      "OSCL": [
+        "customer"
+      ]
+    }
+  },
+  {
+    "question_id": 452,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all active service problem types.",
+    "gold_sql": "SELECT prblmTypID, Name FROM OSCP WHERE Active = 'Y'",
+    "schema_links": {
+      "OSCP": [
+        "Active",
+        "Name",
+        "prblmTypID"
+      ]
+    }
+  },
+  {
+    "question_id": 453,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all active service call sub-statuses.",
+    "gold_sql": "SELECT Number, Name FROM OSST WHERE Active = 'Y'",
+    "schema_links": {
+      "OSST": [
+        "Active",
+        "Name",
+        "Number"
+      ]
+    }
+  },
+  {
+    "question_id": 454,
+    "db_id": "SBODemoUS-Service",
+    "question": "List internal service requests with their open dates and descriptions.",
+    "gold_sql": "SELECT RequestNum, Open_Date, TaskType, Dscription FROM OISR",
+    "schema_links": {
+      "OISR": [
+        "Dscription",
+        "Open_Date",
+        "RequestNum",
+        "TaskType"
+      ]
+    }
+  },
+  {
+    "question_id": 455,
+    "db_id": "SBODemoUS-Service",
+    "question": "Show all service contract items with their item codes and serial numbers.",
+    "gold_sql": "SELECT ContractID, Line, ItemCode, ItemName, ManufSN FROM CTR1",
+    "schema_links": {
+      "CTR1": [
+        "ContractID",
+        "ItemCode",
+        "ItemName",
+        "Line",
+        "ManufSN"
+      ]
+    }
+  },
+  {
+    "question_id": 456,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all members assigned to each service queue.",
+    "gold_sql": "SELECT queueID, member FROM QUE1",
+    "schema_links": {
+      "QUE1": [
+        "member",
+        "queueID"
+      ]
+    }
+  },
+  {
+    "question_id": 457,
+    "db_id": "SBODemoUS-Service",
+    "question": "List all service contract templates with their renewal settings and duration.",
+    "gold_sql": "SELECT TmpltName, Renewal, Duration FROM OCTT",
+    "schema_links": {
+      "OCTT": [
+        "Duration",
+        "Renewal",
+        "TmpltName"
+      ]
+    }
+  },
+  {
+    "question_id": 458,
+    "db_id": "SBODemoUS-Finance",
+    "question": "Show all journal entry batch numbers and their reference dates where the memo contains the word 'Salary'.",
+    "gold_sql": "SELECT BatchNum, RefDate FROM OJDT WHERE Memo LIKE '%Salary%'",
+    "schema_links": {
+      "OJDT": [
+        "BatchNum",
+        "Memo",
+        "RefDate"
+      ]
+    }
+  },
+  {
+    "question_id": 459,
+    "db_id": "SBODemoUS-Inventory and Production",
+    "question": "List all archived warehouse codes and names that are not locked.",
+    "gold_sql": "SELECT WhsCode, WhsName FROM AWHS WHERE Locked = 'N'",
+    "schema_links": {
+      "AWHS": [
+        "Locked",
+        "WhsCode",
+        "WhsName"
+      ]
+    }
+  },
+  {
+    "question_id": 460,
+    "db_id": "SBODemoUS-Service",
+    "question": "Show all archived service contracts with their customer names and renewal settings.",
+    "gold_sql": "SELECT ContractID, CstmrName, Renewal FROM ACTR",
+    "schema_links": {
+      "ACTR": [
+        "ContractID",
+        "CstmrName",
+        "Renewal"
+      ]
+    }
   }
 ]
