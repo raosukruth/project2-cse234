@@ -1,0 +1,22 @@
+% Cross-model comparison at the identical top configuration (Q5):
+% r=4, alpha=8, attention-only LoRA, lr=1e-5, cosine schedule, 3 epochs,
+% basic prompt format, augmented 460-example corpus, two-stage inference.
+% Only the base model differs across rows. Scores read from each run's eval.txt:
+%   Qwen2.5-1.5B  -> results/augmented_final_rf_two_stage/run5_eval.txt
+%   Qwen3-1.7B    -> results/qwen3_1p7b_top3_rf_two_stage/run1_eval.txt
+%   SmolLM2-1.7B  -> results/smollm2_top3_rf_two_stage/run1_eval.txt
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+Base model & Params & Table & Column & Leaderboard \\
+\midrule
+Qwen2.5-1.5B-Instruct   & 1.5B & \textbf{0.5695} & \textbf{0.3802} & \textbf{0.4749} \\
+Qwen3-1.7B              & 1.7B & 0.5350 & 0.3599 & 0.4474 \\
+SmolLM2-1.7B-Instruct   & 1.7B & 0.2568 & 0.1420 & 0.1994 \\
+\bottomrule
+\end{tabular}
+\caption{Cross-model comparison at the identical best configuration (basic format, $r{=}4$/$\alpha{=}8$, attention-only, $lr{=}10^{-5}$, cosine schedule, 3 epochs, augmented 460-example corpus, two-stage inference). Only the base model differs; all other knobs are held constant. Best in bold.}
+\label{tab:cross-model}
+\end{table}

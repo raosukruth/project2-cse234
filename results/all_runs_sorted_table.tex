@@ -1,0 +1,43 @@
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\small
+\begin{longtable}{@{}llp{1.9in}rrr@{}}
+\caption{All evaluated runs sorted by leaderboard score (descending). Exp codes: AF=augmented\_final, AQ3=augmented\_qwen3\_top3, AS2=augmented\_smollm2\_top3, E40=experkrj\_40.}\label{tab:all-runs-sorted}\\
+\toprule
+Exp & Run & Knobs & Table & Column & Leaderboard \\
+\midrule
+\endfirsthead
+\toprule
+Exp & Run & Knobs & Table & Column & Leaderboard \\
+\midrule
+\endhead
+AF & 5 & label=Q5\_r4\_attn\_lr1e5\_cosine\_e3, fmt=basic, r/a=4/8, lr=1e-05, sch=cosine, ep=3, ms=-, tgt=attn & 0.5695 & 0.3802 & 0.4749 \\
+AF & 1 & label=P1\_r4\_attn\_lr1e5\_e2, fmt=basic, r/a=4/8, lr=1e-05, sch=linear, ep=2, ms=-, tgt=attn & 0.5695 & 0.3786 & 0.4741 \\
+AF & 2 & label=P2\_r4\_attn\_lr1e5\_e3, fmt=basic, r/a=4/8, lr=1e-05, sch=linear, ep=3, ms=-, tgt=attn & 0.5574 & 0.3901 & 0.4738 \\
+AF & 4 & label=Q1\_r4\_attn\_lr2e5\_e2, fmt=basic, r/a=4/8, lr=2e-05, sch=linear, ep=2, ms=-, tgt=attn & 0.5581 & 0.3882 & 0.4732 \\
+AF & 3 & label=P6\_r4\_attn\_lr5e6\_e2, fmt=basic, r/a=4/8, lr=5e-06, sch=linear, ep=2, ms=-, tgt=attn & 0.5525 & 0.3700 & 0.4612 \\
+AQ3 & 3 & label=P6\_r4\_attn\_lr5e6\_e2, fmt=basic, r/a=4/8, lr=1e-05, sch=linear, ep=3, ms=-, tgt=attn & 0.5409 & 0.3702 & 0.4555 \\
+AQ3 & 1 & label=P1\_r4\_attn\_lr1e5\_e2, fmt=basic, r/a=4/8, lr=1e-05, sch=cosine, ep=3, ms=-, tgt=attn & 0.5350 & 0.3599 & 0.4474 \\
+AQ3 & 2 & label=P2\_r4\_attn\_lr1e5\_e3, fmt=basic, r/a=4/8, lr=1e-05, sch=linear, ep=2, ms=-, tgt=attn & 0.5140 & 0.3593 & 0.4366 \\
+E40 & 12 & label=-, fmt=-, r/a=4/8, lr=2e-05, sch=linear, ep=-, ms=120, tgt=attn & 0.4978 & 0.3154 & 0.4066 \\
+E40 & 7 & label=-, fmt=-, r/a=8/16, lr=5e-05, sch=linear, ep=-, ms=120, tgt=attn+mlp & 0.4361 & 0.2577 & 0.3469 \\
+AF & 6 & label=R9\_pkfk\_r8\_attn\_lr2e5\_e3, fmt=pkfk, r/a=4/8, lr=1e-05, sch=linear, ep=2, ms=-, tgt=attn & 0.4609 & 0.0409 & 0.2509 \\
+E40 & 8 & label=-, fmt=-, r/a=16/32, lr=0.0001, sch=linear, ep=-, ms=120, tgt=attn & 0.3297 & 0.1579 & 0.2438 \\
+AS2 & 3 & label=-, fmt=-, r/a=4/8, lr=1e-05, sch=linear, ep=3, ms=-, tgt=attn & 0.2735 & 0.1585 & 0.2160 \\
+AS2 & 2 & label=-, fmt=-, r/a=4/8, lr=1e-05, sch=linear, ep=2, ms=-, tgt=attn & 0.2502 & 0.1491 & 0.1996 \\
+AS2 & 1 & label=-, fmt=-, r/a=4/8, lr=1e-05, sch=cosine, ep=3, ms=-, tgt=attn & 0.2568 & 0.1420 & 0.1994 \\
+E40 & 10 & label=-, fmt=-, r/a=8/16, lr=0.0001, sch=linear, ep=-, ms=150, tgt=attn+mlp & 0.2382 & 0.1586 & 0.1984 \\
+E40 & 3 & label=-, fmt=-, r/a=8/16, lr=0.0001, sch=linear, ep=-, ms=120, tgt=attn+mlp & 0.2448 & 0.1279 & 0.1863 \\
+E40 & 2 & label=-, fmt=-, r/a=8/16, lr=0.0001, sch=linear, ep=-, ms=120, tgt=attn+mlp & 0.2246 & 0.1343 & 0.1795 \\
+E40 & 1 & label=-, fmt=-, r/a=8/16, lr=0.0001, sch=linear, ep=-, ms=120, tgt=attn+mlp & 0.1800 & 0.1098 & 0.1449 \\
+AF & 7 & label=R10\_sorted\_r8\_attn\_lr2e5\_e3, fmt=sorted, r/a=4/8, lr=1e-05, sch=linear, ep=2, ms=-, tgt=attn & 0.2377 & 0.0452 & 0.1414 \\
+E40 & 14 & label=-, fmt=-, r/a=16/32, lr=0.0001, sch=linear, ep=-, ms=200, tgt=attn+mlp & 0.1557 & 0.0848 & 0.1202 \\
+E40 & 9 & label=-, fmt=-, r/a=16/32, lr=0.0001, sch=linear, ep=-, ms=150, tgt=attn+mlp & 0.1328 & 0.0750 & 0.1039 \\
+E40 & 13 & label=-, fmt=-, r/a=8/16, lr=0.0001, sch=linear, ep=-, ms=200, tgt=attn+mlp & 0.0570 & 0.0579 & 0.0574 \\
+E40 & 6 & label=-, fmt=-, r/a=8/16, lr=0.0002, sch=linear, ep=-, ms=120, tgt=attn+mlp & 0.0542 & 0.0431 & 0.0486 \\
+E40 & 4 & label=-, fmt=-, r/a=16/32, lr=0.0001, sch=linear, ep=-, ms=120, tgt=attn+mlp & 0.0495 & 0.0419 & 0.0457 \\
+E40 & 5 & label=-, fmt=-, r/a=32/64, lr=0.0001, sch=linear, ep=-, ms=120, tgt=attn+mlp & 0.0539 & 0.0323 & 0.0431 \\
+E40 & 11 & label=-, fmt=-, r/a=16/32, lr=0.0001, sch=linear, ep=-, ms=150, tgt=attn+mlp & 0.0462 & 0.0318 & 0.0390 \\
+\bottomrule
+\end{longtable}
+\normalsize

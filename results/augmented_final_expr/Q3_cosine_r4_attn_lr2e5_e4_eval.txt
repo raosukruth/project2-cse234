@@ -1,0 +1,18 @@
+Evaluated:                  101 questions
+Schema-invalid identifiers: tables=0, columns=0
+
+---- Table-level (macro-averaged across questions) ----
+  Precision_T : 0.5509
+  Recall_T    : 0.5149
+  F1_T        : 0.5140
+  Table Score : 0.5266     ((P+R+F1)/3)
+
+---- Column-level (Table.Column pairs, macro-averaged) ----
+  Precision_C : 0.3843
+  Recall_C    : 0.3270
+  F1_C        : 0.3002
+  Column Score: 0.3372     ((P+R+F1)/3)
+
+==> Leaderboard Score : 0.4319   (0.5*Table + 0.5*Column)
+
+Per-question metrics written to results/augmented_final_expr/Q3_cosine_r4_attn_lr2e5_e4_per_question.csv

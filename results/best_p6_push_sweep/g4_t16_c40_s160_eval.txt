@@ -1,0 +1,18 @@
+Evaluated:                  101 questions
+Schema-invalid identifiers: tables=0, columns=0
+
+---- Table-level (macro-averaged across questions) ----
+  Precision_T : 0.5743
+  Recall_T    : 0.5602
+  F1_T        : 0.5378
+  Table Score : 0.5574     ((P+R+F1)/3)
+
+---- Column-level (Table.Column pairs, macro-averaged) ----
+  Precision_C : 0.4693
+  Recall_C    : 0.3281
+  F1_C        : 0.3386
+  Column Score: 0.3787     ((P+R+F1)/3)
+
+==> Leaderboard Score : 0.4681   (0.5*Table + 0.5*Column)
+
+Per-question metrics written to results/best_p6_push_sweep/g4_t16_c40_s160_per_question.csv

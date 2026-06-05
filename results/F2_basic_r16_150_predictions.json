@@ -1,0 +1,1037 @@
+[
+  {
+    "question_id": 1,
+    "schema_links": {}
+  },
+  {
+    "question_id": 2,
+    "schema_links": {}
+  },
+  {
+    "question_id": 3,
+    "schema_links": {
+      "OCC": []
+    }
+  },
+  {
+    "question_id": 4,
+    "schema_links": {}
+  },
+  {
+    "question_id": 5,
+    "schema_links": {
+      "AVOID": [],
+      "EDRPRECRASH": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "EDRSUMMNO",
+        "EDREVENTNO",
+        "PCODE",
+        "PTIME",
+        "PVALUE",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "EDRREST": [],
+      "EDRPOSTCRASH": [],
+      "EMSCARE": [],
+      "GLAZING": [],
+      "EJECT": [],
+      "JKCOEFF": [],
+      "JKWGT": []
+    }
+  },
+  {
+    "question_id": 6,
+    "schema_links": {}
+  },
+  {
+    "question_id": 7,
+    "schema_links": {}
+  },
+  {
+    "question_id": 8,
+    "schema_links": {}
+  },
+  {
+    "question_id": 9,
+    "schema_links": {}
+  },
+  {
+    "question_id": 10,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_Chronic_Absenteeism": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_Chronic_Absenteeism": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Participation_Rate": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": [],
+      "Annual_EM_ELA": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": [],
+      "Total_Cohort_Regents_Exams": [],
+      "BOCES_and_N/RC": []
+    }
+  },
+  {
+    "question_id": 11,
+    "schema_links": {}
+  },
+  {
+    "question_id": 12,
+    "schema_links": {}
+  },
+  {
+    "question_id": 13,
+    "schema_links": {
+      "EDRPRECRASH": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "CASEWGT",
+        "VERSION"
+      ],
+      "EDRREST": [],
+      "EDRPOSTCRASH": [],
+      "EDRSUMM": []
+    }
+  },
+  {
+    "question_id": 14,
+    "schema_links": {}
+  },
+  {
+    "question_id": 15,
+    "schema_links": {}
+  },
+  {
+    "question_id": 16,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_ELP": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": [],
+      "Annual_EM_ELA": [
+        "YEAR",
+        "ASSESSMENT_NAME",
+        "SUBGROUP_NAME",
+        "TOTAL_COUNT",
+        "NOT_TESTED",
+        "PCT_NOT_TESTED",
+        "NUM_TESTED",
+        "PCT_TESTED",
+        "LEVEL1_COUNT",
+        "LEVEL1_%TESTED",
+        "LEVEL2_COUNT",
+        "LEVEL2_%TESTED",
+        "LEVEL3_COUNT",
+        "LEVEL3_%TESTED",
+        "LEVEL4_COUNT",
+        "LEVEL4_%TESTED",
+        "NUM_PROF",
+        "PER_PROF",
+        "TOTAL_SCALE_SCORES",
+        "MEAN_SCORE",
+        "SSMA_TimeStamp"
+      ],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": []
+    }
+  },
+  {
+    "question_id": 17,
+    "schema_links": {}
+  },
+  {
+    "question_id": 18,
+    "schema_links": {}
+  },
+  {
+    "question_id": 19,
+    "schema_links": {}
+  },
+  {
+    "question_id": 20,
+    "schema_links": {}
+  },
+  {
+    "question_id": 21,
+    "schema_links": {}
+  },
+  {
+    "question_id": 22,
+    "schema_links": {}
+  },
+  {
+    "question_id": 23,
+    "schema_links": {}
+  },
+  {
+    "question_id": 24,
+    "schema_links": {}
+  },
+  {
+    "question_id": 25,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_Chronic_Absenteeism": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_Chronic_Absenteeism": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Participation_Rate": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": [],
+      "Annual_EM_ELA": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": [],
+      "BOCES_and_N/RC": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": [],
+      "Total_Cohort_Regents_Exams": []
+    }
+  },
+  {
+    "question_id": 26,
+    "schema_links": {
+      "EMSCARE": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "OCCNO",
+        "EMSNO",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "EDRPOSTCRASH": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "EDRSUMMNO",
+        "EDREVENTNO",
+        "PCODE",
+        "PTIME",
+        "PVALUE",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "EDRREST": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "EDRSUMMNO",
+        "EDREVENTNO",
+        "LFBELT",
+        "LF1STAGEDEP",
+        "LF2STAGEDEP",
+        "LFSWITCH"
+      ]
+    }
+  },
+  {
+    "question_id": 27,
+    "schema_links": {}
+  },
+  {
+    "question_id": 28,
+    "schema_links": {}
+  },
+  {
+    "question_id": 29,
+    "schema_links": {
+      "CDC": []
+    }
+  },
+  {
+    "question_id": 30,
+    "schema_links": {}
+  },
+  {
+    "question_id": 31,
+    "schema_links": {}
+  },
+  {
+    "question_id": 32,
+    "schema_links": {
+      "AHEM": []
+    }
+  },
+  {
+    "question_id": 33,
+    "schema_links": {
+      "EMSCARE": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "OCCNO",
+        "EMSNO",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ]
+    }
+  },
+  {
+    "question_id": 34,
+    "schema_links": {
+      "EDRPRECRASH": [],
+      "EDRPOSTCRASH": [],
+      "EMSCARE": []
+    }
+  },
+  {
+    "question_id": 35,
+    "schema_links": {}
+  },
+  {
+    "question_id": 36,
+    "schema_links": {}
+  },
+  {
+    "question_id": 37,
+    "schema_links": {}
+  },
+  {
+    "question_id": 38,
+    "schema_links": {}
+  },
+  {
+    "question_id": 39,
+    "schema_links": {}
+  },
+  {
+    "question_id": 40,
+    "schema_links": {}
+  },
+  {
+    "question_id": 41,
+    "schema_links": {}
+  },
+  {
+    "question_id": 42,
+    "schema_links": {}
+  },
+  {
+    "question_id": 43,
+    "schema_links": {}
+  },
+  {
+    "question_id": 44,
+    "schema_links": {}
+  },
+  {
+    "question_id": 45,
+    "schema_links": {}
+  },
+  {
+    "question_id": 46,
+    "schema_links": {}
+  },
+  {
+    "question_id": 47,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_Chronic_Absenteeism": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_Chronic_Absenteeism": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Participation_Rate": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": [],
+      "Total_Cohort_Regents_Exams": [],
+      "BOCES_and_N/RC": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": []
+    }
+  },
+  {
+    "question_id": 48,
+    "schema_links": {}
+  },
+  {
+    "question_id": 49,
+    "schema_links": {}
+  },
+  {
+    "question_id": 50,
+    "schema_links": {}
+  },
+  {
+    "question_id": 51,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "OVERRIDE"
+      ],
+      "ACC_EM_Core_and_Weighted_Performance": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR"
+      ],
+      "ACC_EM_ELP": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "OVERRIDE"
+      ],
+      "ACC_EM_NYSESLAT_for_Participation": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR"
+      ],
+      "ACC_EM_Participation_Rate": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "OVERRIDE"
+      ],
+      "ACC_HS_Chronic_Absenteeism": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "OVERRIDE"
+      ],
+      "ACC_HS_Core_and_Weighted_Performance": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR"
+      ],
+      "ACC_HS_ELP": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "OVERRIDE"
+      ],
+      "ACC_HS_Graduation_Rate": []
+    }
+  },
+  {
+    "question_id": 52,
+    "schema_links": {}
+  },
+  {
+    "question_id": 53,
+    "schema_links": {}
+  },
+  {
+    "question_id": 54,
+    "schema_links": {}
+  },
+  {
+    "question_id": 55,
+    "schema_links": {
+      "EDRPRECRASH": [
+        "CASEID",
+        "EDRSUMMNO",
+        "PCODE",
+        "PTIME",
+        "PVALUE"
+      ],
+      "EDRPOSTCRASH": [
+        "CASEID",
+        "EDRSUMMNO",
+        "EDREVENTNO",
+        "PCODE",
+        "PTIME",
+        "PVALUE"
+      ],
+      "EMSCARE": [
+        "CASEID",
+        "EMSNO"
+      ],
+      "TIRE": [
+        "CASEID",
+        "TIRELOC"
+      ],
+      "TIREPLAC": [
+        "CASEID"
+      ],
+      "VEHMEAS": [
+        "CASEID"
+      ],
+      "EDRSUMM": [
+        "CASEID",
+        "EDRSUMMNO"
+      ],
+      "EDREVENT": [
+        "CASEID",
+        "EDRSUMMNO",
+        "EDREVENTNO"
+      ]
+    }
+  },
+  {
+    "question_id": 56,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [],
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_NYSESLAT_for_Participation": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Chronic_Absenteeism": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Graduation_Rate": [],
+      "ACC_HS_Participation_Rate": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": [],
+      "Annual_EM_ELA": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": [],
+      "BOCES_and_N/RC": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": []
+    }
+  },
+  {
+    "question_id": 57,
+    "schema_links": {}
+  },
+  {
+    "question_id": 58,
+    "schema_links": {}
+  },
+  {
+    "question_id": 59,
+    "schema_links": {}
+  },
+  {
+    "question_id": 60,
+    "schema_links": {}
+  },
+  {
+    "question_id": 61,
+    "schema_links": {}
+  },
+  {
+    "question_id": 62,
+    "schema_links": {}
+  },
+  {
+    "question_id": 63,
+    "schema_links": {}
+  },
+  {
+    "question_id": 64,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_Chronic_Absenteeism": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_Chronic_Absenteeism": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Participation_Rate": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": [],
+      "Annual_EM_ELA": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": [],
+      "Total_Cohort_Regents_Exams": [],
+      "BOCES_and_N/RC": []
+    }
+  },
+  {
+    "question_id": 65,
+    "schema_links": {}
+  },
+  {
+    "question_id": 66,
+    "schema_links": {}
+  },
+  {
+    "question_id": 67,
+    "schema_links": {}
+  },
+  {
+    "question_id": 68,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [],
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_NYSESLAT_for_Participation": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Chronic_Absenteeism": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Graduation_Rate": [],
+      "ACC_HS_Participation_Rate": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": [],
+      "Annual_EM_ELA": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": [],
+      "BOCES_and_N/RC": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": []
+    }
+  },
+  {
+    "question_id": 69,
+    "schema_links": {}
+  },
+  {
+    "question_id": 70,
+    "schema_links": {}
+  },
+  {
+    "question_id": 71,
+    "schema_links": {}
+  },
+  {
+    "question_id": 72,
+    "schema_links": {}
+  },
+  {
+    "question_id": 73,
+    "schema_links": {}
+  },
+  {
+    "question_id": 74,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Participation_Rate": [],
+      "Annual_EM_ELA": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": [],
+      "BOCES_and_N/RC": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": []
+    }
+  },
+  {
+    "question_id": 75,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_Chronic_Absenteeism": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_Chronic_Absenteeism": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Participation_Rate": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": [],
+      "Annual_EM_ELA": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": [],
+      "BOCES_and_N/RC": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": [],
+      "Total_Cohort_Regents_Exams": []
+    }
+  },
+  {
+    "question_id": 76,
+    "schema_links": {}
+  },
+  {
+    "question_id": 77,
+    "schema_links": {}
+  },
+  {
+    "question_id": 78,
+    "schema_links": {
+      "EDRPOSTCRASH": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "EDRSUMMNO",
+        "EDREVENTNO",
+        "PCODE",
+        "PTIME",
+        "PVALUE",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "INTRUSION": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "INTRUNO",
+        "CASEWGT",
+        "PSUSTRAT",
+        "VERSION"
+      ],
+      "EMSCARE": [
+        "CASEID",
+        "PSU",
+        "CASENO",
+        "CASENUMBER",
+        "CATEGORY",
+        "VEHNO",
+        "OCCNO",
+        "EMSNO",
+        "EMSCARE",
+        "NOTIFIED",
+        "SCENEARR"
+      ]
+    }
+  },
+  {
+    "question_id": 79,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [],
+      "ACC_EM_Core_and_Weighted_Performance": [],
+      "ACC_EM_ELP": [],
+      "ACC_EM_Participation_Rate": [],
+      "ACC_HS_Chronic_Absenteeism": [],
+      "ACC_HS_Core_and_Weighted_Performance": [],
+      "ACC_HS_ELP": [],
+      "ACC_HS_Participation_Rate": [],
+      "Accountability_Levels": [],
+      "Accountability_Status": [],
+      "Accountability_Status_by_Subgroup": [],
+      "Annual_EM_ELA": [],
+      "Annual_EM_MATH": [],
+      "Annual_EM_SCIENCE": [],
+      "Annual_NYSAA": [],
+      "Annual_NYSESLAT": [],
+      "Annual_Regents_Exams": [],
+      "BOCES_and_N/RC": [],
+      "Expenditures_per_Pupil": [],
+      "Inexperienced_Teachers_and_Principals": [],
+      "Institution_Grouping": [],
+      "Postsecondary_Enrollment": [],
+      "Teachers_Teaching_Out_of_Certification": [],
+      "Total_Cohort_Regents_Exams": []
+    }
+  },
+  {
+    "question_id": 80,
+    "schema_links": {}
+  },
+  {
+    "question_id": 81,
+    "schema_links": {}
+  },
+  {
+    "question_id": 82,
+    "schema_links": {}
+  },
+  {
+    "question_id": 83,
+    "schema_links": {}
+  },
+  {
+    "question_id": 84,
+    "schema_links": {
+      "ACC_EM_Chronic_Absenteeism": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "SUBJECT",
+        "SUBGROUP_NAME",
+        "LEVEL"
+      ],
+      "ACC_EM_Core_and_Weighted_Performance": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "SUBJECT",
+        "SUBGROUP_NAME"
+      ],
+      "ACC_EM_ELP": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "SUBJECT",
+        "SUBGROUP_NAME",
+        "ELL_COUNT"
+      ],
+      "ACC_EM_NYSESLAT_for_Participation": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "SUBJECT",
+        "SSMA_TimeStamp"
+      ],
+      "ACC_EM_Participation_Rate": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "SUBGROUP_NAME",
+        "COHORT",
+        "RATE"
+      ],
+      "ACC_HS_Chronic_Absenteeism": [
+        "INSTITUTION_ID",
+        "ENTITY_CD",
+        "ENTITY_NAME",
+        "YEAR",
+        "SUBJECT",
+        "SUBGROUP_NAME",
+        "LEVEL"
+      ],
+      "ACC_HS_Core_and_Weighted_Performance": [
+        "INSTITUTION_ID",
+        "ENTITY_CD"
+      ]
+    }
+  },
+  {
+    "question_id": 85,
+    "schema_links": {
+      "ITM1": [
+        "ItemCode",
+        "UomEntry",
+        "Price",
+        "Currency",
+        "Factor",
+        "LogInstanc",
+        "ObjType",
+        "AddPrice1",
+        "Currency1",
+        "AddPrice2",
+        "Currency2",
+        "Ovrwrite1",
+        "Ovrwrite2",
+        "BasePLNum",
+        "PriceType"
+      ],
+      "ITM2": [
+        "ItemCode",
+        "VendorCode",
+        "LogInstanc",
+        "ObjType"
+      ],
+      "ITM3": [
+        "ItemCode"
+      ],
+      "ITM4": [
+        "ItemCode",
+        "UomType",
+        "UomEntry",
+        "Height1",
+        "Hght1Unit"
+      ]
+    }
+  },
+  {
+    "question_id": 86,
+    "schema_links": {}
+  },
+  {
+    "question_id": 87,
+    "schema_links": {
+      "ITM8": [
+        "ItemCode"
+      ],
+      "ITM7": [
+        "ItemCode",
+        "DprArea",
+        "VisOrder",
+        "UsefulLfeC",
+        "LogInstanc"
+      ],
+      "ITM9": [
+        "LogInstanc",
+        "UpdateDate"
+      ],
+      "ITM1": [
+        "ItemCode",
+        "LogInstanc"
+      ],
+      "ITM2": [
+        "ItemCode",
+        "VendorCode"
+      ]
+    }
+  },
+  {
+    "question_id": 88,
+    "schema_links": {}
+  },
+  {
+    "question_id": 89,
+    "schema_links": {}
+  },
+  {
+    "question_id": 90,
+    "schema_links": {}
+  },
+  {
+    "question_id": 91,
+    "schema_links": {}
+  },
+  {
+    "question_id": 92,
+    "schema_links": {}
+  },
+  {
+    "question_id": 93,
+    "schema_links": {}
+  },
+  {
+    "question_id": 94,
+    "schema_links": {}
+  },
+  {
+    "question_id": 95,
+    "schema_links": {}
+  },
+  {
+    "question_id": 96,
+    "schema_links": {}
+  },
+  {
+    "question_id": 97,
+    "schema_links": {}
+  },
+  {
+    "question_id": 98,
+    "schema_links": {}
+  },
+  {
+    "question_id": 99,
+    "schema_links": {}
+  },
+  {
+    "question_id": 100,
+    "schema_links": {}
+  },
+  {
+    "question_id": 101,
+    "schema_links": {
+      "ACC_EM_Core_and_Weighted_Performance": [
+        "YEAR",
+        "WEIGHTED_COHORT",
+        "WEIGHTED_INDEX",
+        "OVERRIDE_WEIGHTED"
+      ],
+      "Annual_NYSESLAT": [
+        "YEAR",
+        "SUBJECT",
+        "SUBGROUP_NAME",
+        "TESTED",
+        "PER_TEST"
+      ],
+      "Expenditures_per_Pupil": [
+        "YEAR"
+      ]
+    }
+  }
+]
