@@ -1,9 +1,0 @@
-========================================
-FINAL SUMMARY  (best adapter: P6_r4_attn_lr5e6_e2)
-========================================
-0.4621  s6_aggressive_wide  [tables=16 cols=35 stage1_tokens=128]  (table/col=0.5503/0.3740)
-0.4620  s4_wider  [tables=12 cols=30 stage1_tokens=128]  (table/col=0.5615/0.3626)
-0.4537  s3_more_cols  [tables=10 cols=30 stage1_tokens=96]  (table/col=0.5496/0.3577)
-0.4498  s1_base  [tables=10 cols=25 stage1_tokens=96]  (table/col=0.5460/0.3536)
-0.4498  s5_more_stage1_tokens  [tables=10 cols=25 stage1_tokens=128]  (table/col=0.5460/0.3536)
-0.4442  s2_more_tables  [tables=12 cols=25 stage1_tokens=96]  (table/col=0.5382/0.3503)

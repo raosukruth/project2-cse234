@@ -1,6 +1,0 @@
-========================================
-FINAL SUMMARY  (P6 final narrow sweep)
-========================================
-0.4604  f2_t16_c45_s128  [max_tables=16 max_columns_per_table=45 table_stage_tokens=128]  (table/col=0.5503/0.3704)
-0.4574  f3_t16_c50_s128  [max_tables=16 max_columns_per_table=50 table_stage_tokens=128]  (table/col=0.5425/0.3722)
-0.4522  f1_t16_c42_s128  [max_tables=16 max_columns_per_table=42 table_stage_tokens=128]  (table/col=0.5398/0.3645)
